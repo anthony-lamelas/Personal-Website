@@ -13,13 +13,14 @@ const Navigation = () => {
     { path: "/", label: "Home" },
     { path: "/about", label: "About" },
     { path: "/projects", label: "Projects" },
+    { path: "/contact", label: "Contact" },
   ];
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-xl font-bold text-white hover:text-purple-300 transition-colors">
+          <Link to="/" className="text-xl font-bold text-white hover:text-blue-300 transition-colors">
             Portfolio
           </Link>
 
@@ -32,8 +33,8 @@ const Navigation = () => {
                   to={item.path}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     isActive(item.path)
-                      ? "text-purple-300 bg-white/10"
-                      : "text-white hover:text-purple-300 hover:bg-white/5"
+                      ? "text-blue-300 bg-white/10"
+                      : "text-white hover:text-blue-300 hover:bg-white/5"
                   }`}
                 >
                   {item.label}
@@ -46,7 +47,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-purple-300 transition-colors"
+              className="text-white hover:text-blue-300 transition-colors"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -64,8 +65,8 @@ const Navigation = () => {
                   onClick={() => setIsOpen(false)}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                     isActive(item.path)
-                      ? "text-purple-300 bg-white/10"
-                      : "text-white hover:text-purple-300 hover:bg-white/5"
+                      ? "text-blue-300 bg-white/10"
+                      : "text-white hover:text-blue-300 hover:bg-white/5"
                   }`}
                 >
                   {item.label}

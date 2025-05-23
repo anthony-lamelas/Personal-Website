@@ -6,9 +6,21 @@ const About = () => {
   return (
     <div className="pt-16 min-h-screen">
       <div className="max-w-4xl mx-auto px-4 py-20">
-        {/* Header */}
+        {/* Header with Profile Picture */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-white mb-6">About Me</h1>
+          
+          {/* Profile Picture */}
+          <div className="mb-8 flex justify-center">
+            <div className="relative w-48 h-48 overflow-hidden rounded-full border-4 border-white/20">
+              <img
+                src="/placeholder.svg" // Replace with your actual profile image
+                alt="Your Name"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Learn more about my journey, passions, and what drives me in the world of computer science.
           </p>
@@ -20,7 +32,7 @@ const About = () => {
           <Card className="bg-white/10 backdrop-blur-sm border-white/20">
             <CardContent className="p-8">
               <div className="flex items-center mb-6">
-                <Heart className="text-purple-400 mr-3" size={28} />
+                <Heart className="text-blue-400 mr-3" size={28} />
                 <h2 className="text-3xl font-bold text-white">My Story</h2>
               </div>
               <div className="text-gray-300 space-y-4 text-lg leading-relaxed">
@@ -49,7 +61,7 @@ const About = () => {
           <Card className="bg-white/10 backdrop-blur-sm border-white/20">
             <CardContent className="p-8">
               <div className="flex items-center mb-6">
-                <Code className="text-purple-400 mr-3" size={28} />
+                <Code className="text-blue-400 mr-3" size={28} />
                 <h2 className="text-3xl font-bold text-white">Why Computer Science?</h2>
               </div>
               <div className="text-gray-300 space-y-4 text-lg leading-relaxed">
@@ -78,7 +90,7 @@ const About = () => {
           <Card className="bg-white/10 backdrop-blur-sm border-white/20">
             <CardContent className="p-8">
               <div className="flex items-center mb-6">
-                <Target className="text-purple-400 mr-3" size={28} />
+                <Target className="text-blue-400 mr-3" size={28} />
                 <h2 className="text-3xl font-bold text-white">My Goals</h2>
               </div>
               <div className="text-gray-300 space-y-4 text-lg leading-relaxed">
@@ -108,7 +120,7 @@ const About = () => {
           <Card className="bg-white/10 backdrop-blur-sm border-white/20">
             <CardContent className="p-8">
               <div className="flex items-center mb-6">
-                <Lightbulb className="text-purple-400 mr-3" size={28} />
+                <Lightbulb className="text-blue-400 mr-3" size={28} />
                 <h2 className="text-3xl font-bold text-white">What Drives Me</h2>
               </div>
               <div className="text-gray-300 space-y-4 text-lg leading-relaxed">
@@ -142,8 +154,8 @@ const About = () => {
           </p>
           <div className="space-x-4">
             <a
-              href="mailto:your.email@example.com"
-              className="inline-block px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 hover:scale-105"
+              href="/contact"
+              className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 hover:scale-105"
             >
               Get In Touch
             </a>

@@ -1,20 +1,10 @@
 
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { ExternalLink, Github, Code } from "lucide-react";
 import { projects } from "@/data/projects";
 
 const Projects = () => {
-  const [filter, setFilter] = useState("all");
-
-  // Get unique technologies for filtering
-  const allTechnologies = [...new Set(projects.flatMap(project => project.technologies))];
-
-  const filteredProjects = filter === "all" 
-    ? projects 
-    : projects.filter(project => project.technologies.includes(filter));
-
   return (
     <div className="pt-16 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 py-20">
@@ -28,36 +18,9 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <button
-            onClick={() => setFilter("all")}
-            className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
-              filter === "all"
-                ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white"
-                : "bg-white/10 text-gray-300 hover:bg-white/20"
-            }`}
-          >
-            All Projects
-          </button>
-          {allTechnologies.slice(0, 6).map((tech) => (
-            <button
-              key={tech}
-              onClick={() => setFilter(tech)}
-              className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
-                filter === tech
-                  ? "bg-gradient-to-r from-purple-600 to-pink-600 text-white"
-                  : "bg-white/10 text-gray-300 hover:bg-white/20"
-              }`}
-            >
-              {tech}
-            </button>
-          ))}
-        </div>
-
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project) => (
+          {projects.map((project) => (
             <Card key={project.id} className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 overflow-hidden">
               <div className="aspect-video overflow-hidden">
                 <img
@@ -75,7 +38,7 @@ const Projects = () => {
                   {project.technologies.slice(0, 3).map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm"
+                      className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm"
                     >
                       {tech}
                     </span>
@@ -91,7 +54,7 @@ const Projects = () => {
                 <div className="flex items-center justify-between">
                   <Link
                     to={`/projects/${project.id}`}
-                    className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300"
+                    className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300"
                   >
                     <Code className="mr-2" size={16} />
                     View Details
@@ -124,22 +87,6 @@ const Projects = () => {
             </Card>
           ))}
         </div>
-
-        {/* Empty State */}
-        {filteredProjects.length === 0 && (
-          <div className="text-center py-20">
-            <h3 className="text-2xl font-bold text-white mb-4">No projects found</h3>
-            <p className="text-gray-300 mb-6">
-              No projects match the selected technology filter.
-            </p>
-            <button
-              onClick={() => setFilter("all")}
-              className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300"
-            >
-              View All Projects
-            </button>
-          </div>
-        )}
       </div>
     </div>
   );

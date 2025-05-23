@@ -1,25 +1,27 @@
 
+import { useState } from "react";
 import { ArrowRight, Code, Database, Laptop, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
 const Index = () => {
   const skills = [
-    { name: "JavaScript", level: 90, icon: Code },
-    { name: "Python", level: 85, icon: Code },
-    { name: "React", level: 88, icon: Laptop },
-    { name: "Node.js", level: 80, icon: Database },
-    { name: "SQL", level: 75, icon: Database },
-    { name: "Git", level: 82, icon: Code },
+    { name: "JavaScript", icon: Code },
+    { name: "Python", icon: Code },
+    { name: "React", icon: Laptop },
+    { name: "Node.js", icon: Database },
+    { name: "SQL", icon: Database },
+    { name: "Git", icon: Code },
   ];
 
   const coursework = [
-    "Data Structures & Algorithms",
-    "Software Engineering",
-    "Database Systems",
-    "Computer Networks",
-    "Machine Learning",
-    "Web Development",
+    { name: "Data Structures & Algorithms", code: "CSUY 1134" },
+    { name: "Software Engineering", code: "CSUY 4513" },
+    { name: "Database Systems", code: "CSUY 3083" },
+    { name: "Computer Networks", code: "CSUY 4533" },
+    { name: "Machine Learning", code: "CSUY 4563" },
+    { name: "Web Development", code: "CSUY 4613" },
   ];
 
   return (
@@ -30,7 +32,7 @@ const Index = () => {
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
               Hi, I'm{" "}
-              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 Your Name
               </span>
             </h1>
@@ -41,14 +43,14 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/projects"
-                className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 hover:scale-105"
               >
                 View My Work
                 <ArrowRight className="ml-2" size={20} />
               </Link>
               <Link
                 to="/about"
-                className="inline-flex items-center px-8 py-3 border-2 border-purple-400 text-purple-400 font-semibold rounded-lg hover:bg-purple-400 hover:text-white transition-all duration-300"
+                className="inline-flex items-center px-8 py-3 border-2 border-blue-400 text-blue-400 font-semibold rounded-lg hover:bg-blue-400 hover:text-white transition-all duration-300"
               >
                 Learn More About Me
               </Link>
@@ -63,21 +65,12 @@ const Index = () => {
           <h2 className="text-4xl font-bold text-white text-center mb-12">
             Technical Skills
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {skills.map((skill, index) => (
               <Card key={skill.name} className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <skill.icon className="text-purple-400 mr-3" size={24} />
-                    <h3 className="text-lg font-semibold text-white">{skill.name}</h3>
-                  </div>
-                  <div className="w-full bg-gray-700 rounded-full h-3">
-                    <div
-                      className="bg-gradient-to-r from-purple-500 to-pink-500 h-3 rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
-                  <p className="text-gray-300 text-sm mt-2">{skill.level}% Proficiency</p>
+                <CardContent className="p-6 flex flex-col items-center">
+                  <skill.icon className="text-blue-400 mb-4" size={36} />
+                  <h3 className="text-lg font-semibold text-white text-center">{skill.name}</h3>
                 </CardContent>
               </Card>
             ))}
@@ -92,15 +85,24 @@ const Index = () => {
             Relevant Coursework
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {coursework.map((course, index) => (
-              <Card key={course} className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                <CardContent className="p-6">
-                  <div className="flex items-center">
-                    <BookOpen className="text-purple-400 mr-3" size={20} />
-                    <h3 className="text-lg font-medium text-white">{course}</h3>
-                  </div>
-                </CardContent>
-              </Card>
+            {coursework.map((course) => (
+              <Collapsible key={course.name}>
+                <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
+                  <CollapsibleTrigger className="w-full text-left">
+                    <CardContent className="p-6">
+                      <div className="flex items-center">
+                        <BookOpen className="text-blue-400 mr-3" size={20} />
+                        <h3 className="text-lg font-medium text-white">{course.name}</h3>
+                      </div>
+                    </CardContent>
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    <div className="px-6 pb-4 text-gray-300">
+                      Course Code: <span className="text-blue-300">{course.code}</span>
+                    </div>
+                  </CollapsibleContent>
+                </Card>
+              </Collapsible>
             ))}
           </div>
         </div>
@@ -116,8 +118,8 @@ const Index = () => {
             I'm always open to discussing new opportunities and interesting projects.
           </p>
           <Link
-            to="/about"
-            className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300 hover:scale-105"
+            to="/contact"
+            className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 hover:scale-105"
           >
             Get In Touch
             <ArrowRight className="ml-2" size={20} />

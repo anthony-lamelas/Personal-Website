@@ -16,7 +16,7 @@ const ProjectDetail = () => {
           <p className="text-gray-300 mb-6">The project you're looking for doesn't exist.</p>
           <Link
             to="/projects"
-            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300"
+            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300"
           >
             <ArrowLeft className="mr-2" size={20} />
             Back to Projects
@@ -32,7 +32,7 @@ const ProjectDetail = () => {
         {/* Back Button */}
         <Link
           to="/projects"
-          className="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors mb-8"
+          className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors mb-8"
         >
           <ArrowLeft className="mr-2" size={20} />
           Back to Projects
@@ -61,7 +61,7 @@ const ProjectDetail = () => {
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300"
               >
                 <ExternalLink className="mr-2" size={20} />
                 Live Demo
@@ -78,7 +78,7 @@ const ProjectDetail = () => {
             <Card className="bg-white/10 backdrop-blur-sm border-white/20">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <Code className="text-purple-400 mr-3" size={28} />
+                  <Code className="text-blue-400 mr-3" size={28} />
                   <h2 className="text-3xl font-bold text-white">Project Overview</h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -92,7 +92,7 @@ const ProjectDetail = () => {
                       {project.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 bg-purple-600/20 text-purple-300 rounded-full text-sm"
+                          className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm"
                         >
                           {tech}
                         </span>
@@ -107,7 +107,7 @@ const ProjectDetail = () => {
             <Card className="bg-white/10 backdrop-blur-sm border-white/20">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <CheckCircle className="text-purple-400 mr-3" size={28} />
+                  <CheckCircle className="text-blue-400 mr-3" size={28} />
                   <h2 className="text-3xl font-bold text-white">Key Features</h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -125,7 +125,7 @@ const ProjectDetail = () => {
             <Card className="bg-white/10 backdrop-blur-sm border-white/20">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <Target className="text-purple-400 mr-3" size={28} />
+                  <Target className="text-blue-400 mr-3" size={28} />
                   <h2 className="text-3xl font-bold text-white">Challenges & Solutions</h2>
                 </div>
                 <div className="space-y-4">
@@ -143,7 +143,7 @@ const ProjectDetail = () => {
             <Card className="bg-white/10 backdrop-blur-sm border-white/20">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <Lightbulb className="text-purple-400 mr-3" size={28} />
+                  <Lightbulb className="text-blue-400 mr-3" size={28} />
                   <h2 className="text-3xl font-bold text-white">What I Learned</h2>
                 </div>
                 <div className="space-y-4">
@@ -184,7 +184,7 @@ const ProjectDetail = () => {
           <h3 className="text-2xl font-bold text-white mb-6">Explore More Projects</h3>
           <Link
             to="/projects"
-            className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-300"
+            className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300"
           >
             View All Projects
             <ArrowLeft className="ml-2 rotate-180" size={20} />
