@@ -1,17 +1,20 @@
+
 import { useState } from "react";
-import { ArrowRight, Code, Database, Laptop, BookOpen } from "lucide-react";
+import { ArrowRight, Code, Database, Laptop, BookOpen, Terminal, FileCode, GitBranch } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
 const Index = () => {
   const skills = [
-    { name: "JavaScript", icon: Code },
     { name: "Python", icon: Code },
-    { name: "React", icon: Laptop },
-    { name: "Node.js", icon: Database },
+    { name: "JavaScript", icon: Code },
+    { name: "HTML/CSS", icon: FileCode },
     { name: "SQL", icon: Database },
-    { name: "Git", icon: Code },
+    { name: "C/C++", icon: Code },
+    { name: "Git/GitHub", icon: GitBranch },
+    { name: "LaTeX", icon: FileCode },
+    { name: "Unix Command Line", icon: Terminal },
   ];
 
   const coursework = [
@@ -65,9 +68,9 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-white text-center mb-12">
-            Technical Skills
+            Technical Competencies
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {skills.map((skill, index) => (
               <Card key={skill.name} className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
                 <CardContent className="p-6 flex flex-col items-center">
