@@ -90,8 +90,8 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "FaceCrime",
-    title: "Interactive Data Visualization Dashboard",
+    id: "data-visualization",
+    title: "FaceCrime",
     shortDescription: "A dynamic dashboard for visualizing complex datasets with interactive charts and filters.",
     description: "A comprehensive data visualization platform that transforms raw data into meaningful insights through interactive charts, graphs, and filtering capabilities. Built with modern web technologies to handle large datasets efficiently.",
     technologies: ["React", "D3.js", "Python", "Pandas", "PostgreSQL", "Docker"],
