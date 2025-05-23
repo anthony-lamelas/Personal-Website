@@ -18,7 +18,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "task-manager",
-    title: "Task Management System",
+    title: "Paddler Improvement and Analysis",
     shortDescription: "A full-stack web application for team task management with real-time collaboration features.",
     description: "A comprehensive task management system built with React and Node.js that enables teams to collaborate effectively. Features include real-time updates, project organization, deadline tracking, and team communication tools.",
     technologies: ["React", "Node.js", "MongoDB", "Socket.io", "Express", "JWT"],
@@ -55,7 +55,7 @@ export const projects: Project[] = [
   },
   {
     id: "ai-chatbot",
-    title: "AI-Powered Customer Service Bot",
+    title: "FlightHub",
     shortDescription: "An intelligent chatbot using natural language processing to provide automated customer support.",
     description: "An AI-powered chatbot built with Python and machine learning libraries that can understand and respond to customer inquiries naturally. The system uses NLP techniques to process user input and provide relevant responses.",
     technologies: ["Python", "TensorFlow", "NLTK", "Flask", "JavaScript", "CSS"],
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "data-visualization",
+    id: "FaceCrime",
     title: "Interactive Data Visualization Dashboard",
     shortDescription: "A dynamic dashboard for visualizing complex datasets with interactive charts and filters.",
     description: "A comprehensive data visualization platform that transforms raw data into meaningful insights through interactive charts, graphs, and filtering capabilities. Built with modern web technologies to handle large datasets efficiently.",
@@ -128,7 +128,7 @@ export const projects: Project[] = [
   },
   {
     id: "mobile-fitness-app",
-    title: "Mobile Fitness Tracking App",
+    title: "Scaling Semantic Categories in Vision Transformers",
     shortDescription: "A React Native app for tracking workouts, nutrition, and fitness progress with social features.",
     description: "A comprehensive mobile fitness application that helps users track their workouts, monitor nutrition, and stay motivated through social features and gamification elements. Built with React Native for cross-platform compatibility.",
     technologies: ["React Native", "Firebase", "Redux", "Node.js", "Express", "MongoDB"],
@@ -164,7 +164,7 @@ export const projects: Project[] = [
   },
   {
     id: "e-commerce-platform",
-    title: "E-Commerce Platform",
+    title: "Panelize",
     shortDescription: "A full-featured online marketplace with payment processing, inventory management, and admin dashboard.",
     description: "A complete e-commerce solution featuring user authentication, product catalog management, shopping cart functionality, secure payment processing, and comprehensive admin tools for managing orders and inventory.",
     technologies: ["React", "TypeScript", "Node.js", "Stripe", "PostgreSQL", "AWS"],
@@ -201,7 +201,7 @@ export const projects: Project[] = [
   },
   {
     id: "blockchain-voting",
-    title: "Blockchain Voting System",
+    title: "PaddlePrompt",
     shortDescription: "A secure and transparent voting system built on blockchain technology to ensure election integrity.",
     description: "A decentralized voting platform that leverages blockchain technology to create a secure, transparent, and tamper-proof voting system. Features smart contracts for vote validation and a user-friendly interface for voters and administrators.",
     technologies: ["Solidity", "Ethereum", "Web3.js", "React", "Truffle", "MetaMask"],
