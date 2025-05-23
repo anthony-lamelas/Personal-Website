@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ArrowRight, Code, Database, Laptop, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -23,9 +22,7 @@ const Index = () => {
     { name: "Intro to Databases", code: "CS-UY 3083" },
     { name: "Linear Algebra", code: "MA-UY 1044" },
     { name: "Computer Architecture & Organization", code: "CS-UY 2214" },
-    { name: "Calculus I", code: "MA-UY 1324" },
-    { name: "Calculus II", code: "MA-UY 1124" },
-    { name: "Calculus III", code: "MA-UY 2114" },
+    { name: "Calculus I-III", code: "MA-UY 1324, 1124, 2114" },
     { name: "Probability & Statistics", code: "MA-UY 2224" },
   ];
 
