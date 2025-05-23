@@ -14,8 +14,8 @@ const About = () => {
           <div className="mb-8 flex justify-center">
             <div className="relative w-48 h-48 overflow-hidden rounded-full border-4 border-white/20">
               <img
-                src="/placeholder.svg" // Replace with your actual profile image
-                alt="Your Name"
+                src="/lovable-uploads/48263676-0d04-449e-9a56-570b4d44b04b.png"
+                alt="Anthony Lamelas"
                 className="w-full h-full object-cover"
               />
             </div>

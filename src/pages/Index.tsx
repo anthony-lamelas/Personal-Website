@@ -16,12 +16,17 @@ const Index = () => {
   ];
 
   const coursework = [
-    { name: "Data Structures & Algorithms", code: "CSUY 1134" },
-    { name: "Software Engineering", code: "CSUY 4513" },
-    { name: "Database Systems", code: "CSUY 3083" },
-    { name: "Computer Networks", code: "CSUY 4533" },
-    { name: "Machine Learning", code: "CSUY 4563" },
-    { name: "Web Development", code: "CSUY 4613" },
+    { name: "Data Structures & Algorithms", code: "CS-UY 1134" },
+    { name: "Object Oriented Programming", code: "CS-UY 2124" },
+    { name: "Discrete Mathematics", code: "MA-UY 2314" },
+    { name: "Design & Analysis of Algorithms", code: "CS-UY 2413" },
+    { name: "Intro to Databases", code: "CS-UY 3083" },
+    { name: "Linear Algebra", code: "MA-UY 1044" },
+    { name: "Computer Architecture & Organization", code: "CS-UY 2214" },
+    { name: "Calculus I", code: "MA-UY 1324" },
+    { name: "Calculus II", code: "MA-UY 1124" },
+    { name: "Calculus III", code: "MA-UY 2114" },
+    { name: "Probability & Statistics", code: "MA-UY 2224" },
   ];
 
   return (
@@ -33,7 +38,7 @@ const Index = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
               Hi, I'm{" "}
               <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                Your Name
+                Anthony Lamelas
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">

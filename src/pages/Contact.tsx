@@ -23,10 +23,10 @@ const Contact = () => {
                 <h3 className="text-lg font-semibold text-white">Email</h3>
               </div>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:anthony.lamelas23@gmail.com"
                 className="text-gray-300 hover:text-blue-300 transition-colors"
               >
-                your.email@example.com
+                anthony.lamelas23@gmail.com
               </a>
             </CardContent>
           </Card>
@@ -38,10 +38,10 @@ const Contact = () => {
                 <h3 className="text-lg font-semibold text-white">Phone</h3>
               </div>
               <a
-                href="tel:+1234567890"
+                href="tel:+17868587465"
                 className="text-gray-300 hover:text-blue-300 transition-colors"
               >
-                (123) 456-7890
+                +1 (786) 858 7465
               </a>
             </CardContent>
           </Card>
@@ -53,12 +53,12 @@ const Contact = () => {
                 <h3 className="text-lg font-semibold text-white">LinkedIn</h3>
               </div>
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://linkedin.com/in/anthonylamelas/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-blue-300 transition-colors"
               >
-                linkedin.com/in/yourprofile
+                linkedin.com/in/anthonylamelas/
               </a>
             </CardContent>
           </Card>
@@ -70,12 +70,12 @@ const Contact = () => {
                 <h3 className="text-lg font-semibold text-white">GitHub</h3>
               </div>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/anthony-lamelas"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-blue-300 transition-colors"
               >
-                github.com/yourusername
+                github.com/anthony-lamelas
               </a>
             </CardContent>
           </Card>
@@ -102,7 +102,7 @@ const Contact = () => {
             I'm always interested in new opportunities and projects.
           </p>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:anthony.lamelas23@gmail.com"
             className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300"
           >
             Send me an email
