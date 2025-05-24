@@ -1,6 +1,5 @@
-
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Heart, Target, Lightbulb, Briefcase, Gamepad2 } from "lucide-react";
+import { Code, Heart, Target, Lightbulb, Briefcase, Gamepad2, Award } from "lucide-react";
 
 const About = () => {
   return (
@@ -99,6 +98,26 @@ const About = () => {
                   <ul className="text-gray-300 space-y-1">
                     <li>• Composed SQL queries in Mode (a web-based analytics platform) to pull data from the Snowflake data warehouse</li>
                     <li>• Analyzed over 75 fields of PC monitoring data by running tailored SQL queries and identifying key relationships among tables, leading to informed strategic recommendations utilizing Tableau</li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Achievements */}
+          <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+            <CardContent className="p-8">
+              <div className="flex items-center mb-6">
+                <Award className="text-blue-400 mr-3" size={28} />
+                <h2 className="text-3xl font-bold text-white">Achievements</h2>
+              </div>
+              <div className="space-y-6">
+                <div className="border-l-2 border-blue-400 pl-6 pb-6">
+                  <h3 className="text-xl font-semibold text-white mb-2">Walmart Sophomore Summit (Software Engineering Track)</h3>
+                  <p className="text-blue-300 mb-2">Walmart Global Tech | Apr 2025</p>
+                  <p className="text-gray-300 mb-3">Selected as one of 100 participants from 3,000+ applicants for the Walmart Sophomore Summit – SWE Track.</p>
+                  <ul className="text-gray-300 space-y-1">
+                    <li>• Engaged in hands-on workshops, networking, and technical sessions with Walmart Global Tech engineers</li>
                   </ul>
                 </div>
               </div>
