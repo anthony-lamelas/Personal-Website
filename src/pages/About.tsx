@@ -37,21 +37,19 @@ const About = () => {
               </div>
               <div className="text-gray-300 space-y-4 text-lg leading-relaxed">
                 <p>
-                  My journey into computer science began during high school when I first discovered 
-                  the magic of programming. What started as curiosity about how websites worked 
-                  quickly evolved into a deep passion for creating digital solutions that make a difference.
+                  Unlike many of my peers, when I first started at NYU I had almost no prior experience in computer science.
+                  I was majoring in electrical and computer engineering at the time and had almost no idea what I wanted to do with my life.
+                  However, I quickly realized I need to learn how to code and I needed to learn quickly. 
                 </p>
                 <p>
-                  Growing up, I was always fascinated by technology and problem-solving. I remember 
-                  spending hours taking apart old computers and trying to understand how they worked. 
-                  This natural curiosity led me to pursue computer science, where I could combine my 
-                  love for logical thinking with creative problem-solving.
+                  After throwing myself into countless online courses and unfinished projects I eventually realized
+                  that the field of data science and machine learning was the one for me. The ability to directly apply
+                  the math/statistics I was learning in school combined with my quickly developing programming skills was
+                  very appealing. I also became fascinated with the impressive capabilities of machine learning models
+                  when given the right data.
                 </p>
                 <p>
-                  Throughout my academic journey, I've been fortunate to work on various projects 
-                  that have challenged me and helped me grow both technically and personally. Each 
-                  project has taught me something new and reinforced my belief that technology can 
-                  be a powerful force for positive change.
+                  In just a year and a half, I went from a curious beginner with no background in computer science to a confident developer who's landed multiple internships.
                 </p>
               </div>
             </CardContent>
@@ -96,46 +94,41 @@ const About = () => {
               </div>
               <div className="space-y-6">
                 <div className="border-l-2 border-blue-400 pl-6 pb-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Software Engineer Intern</h3>
-                  <p className="text-blue-300 mb-2">Tech Company | Summer 2024</p>
-                  <p className="text-gray-300 mb-3">Developed and maintained web applications using modern frameworks and technologies.</p>
-                  <ul className="text-gray-300 space-y-1">
-                    <li>• Built responsive user interfaces with React and TypeScript</li>
-                    <li>• Collaborated with cross-functional teams on feature development</li>
-                    <li>• Improved application performance by 25% through code optimization</li>
-                  </ul>
+                  <h3 className="text-xl font-semibold text-white mb-2">Data Science Intern</h3>
+                  <p className="text-blue-300 mb-2">Direct Supply | Summer 2025</p>
+                  <p className="text-gray-300 mb-3">Model development, visualizations, data pipelines, debugging, research, and more.</p>
+
                 </div>
                 
                 <div className="border-l-2 border-blue-400 pl-6 pb-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Research Assistant</h3>
-                  <p className="text-blue-300 mb-2">University Lab | 2023 - Present</p>
-                  <p className="text-gray-300 mb-3">Conducted research on machine learning applications and computer vision projects.</p>
+                  <h3 className="text-xl font-semibold text-white mb-2">Research Intern</h3>
+                  <p className="text-blue-300 mb-2">Pomu (Fashion Manufacturer Recommendation) | April 2024 - Present</p>
+                  <p className="text-gray-300 mb-3">Conducted research on improving vision transformer accuracy.</p>
                   <ul className="text-gray-300 space-y-1">
-                    <li>• Published research paper on vision transformer scaling</li>
-                    <li>• Implemented ML models for data analysis and classification</li>
-                    <li>• Presented findings at academic conferences and symposiums</li>
+                    <li>• Utilized a CLIP-based image classification tool via UNIX command line to process over 500,000 images</li>
+                    <li>• Scripted in Python to measure model accuracy and analyze semantic category scaling trends</li>
+                    <li>• Authored research findings in LaTeX for academic publication</li>
                   </ul>
                 </div>
 
                 <div className="border-l-2 border-blue-400 pl-6 pb-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Web Developer</h3>
-                  <p className="text-blue-300 mb-2">Freelance | 2022 - 2023</p>
-                  <p className="text-gray-300 mb-3">Created custom websites and web applications for small businesses and startups.</p>
+                  <h3 className="text-xl font-semibold text-white mb-2">Engineering Teaching Assistant</h3>
+                  <p className="text-blue-300 mb-2">NYU Tandon EG-UY 1004 | August 2024 - Present</p>
+                  <p className="text-gray-300 mb-3">Mentoring freshman students in their semester long design project for the Intro to Engineering class.</p>
                   <ul className="text-gray-300 space-y-1">
-                    <li>• Delivered 10+ projects on time and within budget</li>
-                    <li>• Increased client web traffic by average of 40% through SEO optimization</li>
-                    <li>• Maintained long-term client relationships with 95% satisfaction rate</li>
+                    <li>• Head of payroll auditing work hours and visualizing financial data</li>
+                    <li>• Assisting over 350 students in the design of prototypes, focusing on circuitry, programming, and CAD</li>
+                    <li>• Promoting teamwork, leadership, and technical development</li>
                   </ul>
                 </div>
 
                 <div className="border-l-2 border-blue-400 pl-6 pb-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Teaching Assistant</h3>
-                  <p className="text-blue-300 mb-2">Computer Science Department | 2022 - 2023</p>
-                  <p className="text-gray-300 mb-3">Assisted students in introductory programming courses and helped with lab sessions.</p>
+                  <h3 className="text-xl font-semibold text-white mb-2">Data & Analytics Intern</h3>
+                  <p className="text-blue-300 mb-2">Computer Science Department | June 2022 - July 2022</p>
+                  <p className="text-gray-300 mb-3">Analyzing data leading to strategic recommendations.</p>
                   <ul className="text-gray-300 space-y-1">
-                    <li>• Mentored 50+ students in Python and Java programming</li>
-                    <li>• Improved student comprehension rates by 30% through personalized tutoring</li>
-                    <li>• Developed supplementary learning materials and coding exercises</li>
+                    <li>• Composed SQL queries in Mode (a web-based analytics platform) to pull data from the Snowflake data warehouse</li>
+                    <li>• Analyzed over 75 fields of PC monitoring data by running tailored SQL queries and identifying key relationships among tables, leading to informed strategic recommendations utilizing Tableau</li>
                   </ul>
                 </div>
               </div>

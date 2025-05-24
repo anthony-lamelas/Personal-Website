@@ -42,8 +42,8 @@ const Index = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Computer Science Student passionate about building innovative solutions 
-              and exploring the endless possibilities of technology.
+              Computer Science Student at the NYU Tandon School of Engineering, 
+              passionate about software development, AI/ML, and data science.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
