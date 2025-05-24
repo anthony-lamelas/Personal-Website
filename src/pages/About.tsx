@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Code, Heart, Target, Lightbulb, Briefcase, Gamepad2, Award, GraduationCap } from "lucide-react";
 
@@ -114,13 +115,16 @@ const About = () => {
               <div className="space-y-6">
                 <div className="border-l-2 border-blue-400 pl-6 pb-6">
                   <h3 className="text-xl font-semibold text-white mb-2">New York University Tandon School of Engineering</h3>
-                  <p className="text-blue-300 mb-2">Sep 2023 - May 2027</p>
+                  <p className="text-blue-300 mb-2">Sep 2023 - May 2027 | New York, NY</p>
                   <p className="text-gray-300 mb-3">Major: Computer Science, Minor: Mathematics</p>
+                  <ul className="text-gray-300 space-y-1">
+                    <li>• Dean's List</li>
+                  </ul>
                 </div>
                 
                 <div className="border-l-2 border-blue-400 pl-6 pb-6">
                   <h3 className="text-xl font-semibold text-white mb-2">Belen Jesuit Preparatory School</h3>
-                  <p className="text-blue-300 mb-2">August 2019 - May 2023</p>
+                  <p className="text-blue-300 mb-2">August 2019 - May 2023 | Miami, FL</p>
                   <p className="text-gray-300 mb-3">High School Diploma</p>
                 </div>
               </div>
