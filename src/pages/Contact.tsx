@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, Linkedin, Github, MapPin } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, MapPin, Instagram } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -15,7 +15,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Information */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
             <CardContent className="p-6">
               <div className="flex items-center mb-4">
@@ -80,7 +80,24 @@ const Contact = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 md:col-span-2">
+          <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
+            <CardContent className="p-6">
+              <div className="flex items-center mb-4">
+                <Instagram className="text-blue-400 mr-3" size={24} />
+                <h3 className="text-lg font-semibold text-white">Instagram</h3>
+              </div>
+              <a
+                href="https://www.instagram.com/anthony__lamelas/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-blue-300 transition-colors"
+              >
+                @anthony__lamelas
+              </a>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
             <CardContent className="p-6">
               <div className="flex items-center mb-4">
                 <MapPin className="text-blue-400 mr-3" size={24} />
