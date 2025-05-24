@@ -1,4 +1,3 @@
-
 export interface Project {
   id: string;
   title: string;
@@ -15,7 +14,8 @@ export interface Project {
   screenshots: string[];
 }
 
-export const projects: Project[] = [  {
+export const projects: Project[] = [
+  {
     id: "task-manager",
     title: "Paddler Improvement System",
     shortDescription: "ML-powered stroke analysis tool for NYU Concrete Canoe Team to improve paddling technique and performance.",
@@ -48,7 +48,44 @@ export const projects: Project[] = [  {
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop"
     ]
-  },  {
+  },
+  {
+    id: "window-warden",
+    title: "Window Warden",
+    shortDescription: "A comprehensive window management and security monitoring application for desktop environments.",
+    description: "Window Warden is a desktop application designed to enhance window management and provide security monitoring for workspaces. The application tracks window usage patterns, provides intelligent window organization suggestions, and monitors for suspicious activity. Built with modern desktop technologies, it offers a seamless user experience while maintaining system performance.",
+    technologies: ["Electron", "Node.js", "TypeScript", "React", "SQLite"],
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+    github: "https://github.com/anthony-lamelas/window-warden",
+    demo: "https://window-warden-demo.com",
+    role: "Lead Developer",
+    features: [
+      "Real-time window tracking and organization",
+      "Intelligent workspace management with automated suggestions",
+      "Security monitoring for suspicious window behavior",
+      "Customizable window layouts and snap configurations",
+      "Activity logging and productivity analytics",
+      "Cross-platform compatibility for Windows, macOS, and Linux"
+    ],
+    challenges: [
+      "Implementing efficient window tracking without impacting system performance",
+      "Developing cross-platform window management APIs",
+      "Creating intuitive user interfaces for complex window operations",
+      "Balancing security monitoring with user privacy concerns"
+    ],
+    learnings: [
+      "Desktop application development with Electron framework",
+      "Operating system APIs for window management",
+      "Performance optimization for background monitoring applications",
+      "User experience design for productivity tools"
+    ],
+    screenshots: [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&h=600&fit=crop"
+    ]
+  },
+  {
     id: "ai-chatbot",
     title: "FlightHub",
     shortDescription: "A comprehensive flight booking system with customer and airline staff interfaces for managing travel.",
@@ -84,7 +121,8 @@ export const projects: Project[] = [  {
       "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop"
     ]
-  },  {
+  },
+  {
     id: "data-visualization",
     title: "FaceCrime",
     shortDescription: "A facial recognition tool that compares user faces against a database of 700,000+ sex offenders using AI and vector search.",
@@ -118,7 +156,8 @@ export const projects: Project[] = [  {
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop"
     ]
-  },  {
+  },
+  {
     id: "mobile-fitness-app",
     title: "Scaling Semantic Categories in Vision Transformers",
     shortDescription: "Research exploring how increasing semantic categories impacts classification performance of vision transformers (ViTs).",
@@ -153,7 +192,8 @@ export const projects: Project[] = [  {
       "https://images.unsplash.com/photo-1434596922112-19c563067271?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"
     ]
-  },  {
+  },
+  {
     id: "e-commerce-platform",
     title: "Panelize",
     shortDescription: "A full-stack comic book/manga generation application using AI for panel prompting and image generation.",
@@ -186,7 +226,8 @@ export const projects: Project[] = [  {
       "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
     ]
-  },  {
+  },
+  {
     id: "blockchain-voting",
     title: "PaddlePrompt",
     shortDescription: "An LLM-based AI assistant specifically trained on Concrete Canoe competition proposals with RAG capabilities.",
