@@ -15,219 +15,199 @@ export interface Project {
   screenshots: string[];
 }
 
-export const projects: Project[] = [
-  {
+export const projects: Project[] = [  {
     id: "task-manager",
-    title: "Paddler Improvement and Analysis",
-    shortDescription: "A full-stack web application for team task management with real-time collaboration features.",
-    description: "A comprehensive task management system built with React and Node.js that enables teams to collaborate effectively. Features include real-time updates, project organization, deadline tracking, and team communication tools.",
-    technologies: ["React", "Node.js", "MongoDB", "Socket.io", "Express", "JWT"],
+    title: "Paddler Improvement System",
+    shortDescription: "ML-powered stroke analysis tool for NYU Concrete Canoe Team to improve paddling technique and performance.",
+    description: "A data-driven system that analyzes paddler performance for the NYU Concrete Canoe Team. Using machine learning models (primarily SVM), the system classifies paddle strokes into optimal/suboptimal categories and provides detailed feedback on different phases of the stroke (catch, pull, release). The analysis helps team members improve their technique through targeted recommendations.",
+    technologies: ["Python", "Scikit-learn", "DeepSeek API"],
     image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
-    github: "https://github.com/yourusername/task-manager",
-    demo: "https://task-manager-demo.com",
-    role: "Full-Stack Developer",
+    github: "https://github.com/nyuconcretecanoe/PIS",
+    demo: "https://concretecanoe.skparab1.com/",
+    role: "Machine Learning Developer",
     features: [
-      "Real-time task updates using WebSocket technology",
-      "User authentication and authorization system",
-      "Project and team management capabilities",
-      "Interactive dashboard with analytics",
-      "Mobile-responsive design",
-      "Email notifications for important updates"
+      "Data collection system for paddler stroke information",
+      "Machine learning classification of optimal vs. inoptimal strokes",
+      "Detailed analysis of stroke phases (catch, pull, release)",
+      "Performance metrics and visualization for individual paddlers",
+      "AI-powered improvement recommendations using DeepSeek",
+      "Integration with web platform for team-wide access"
     ],
     challenges: [
-      "Implementing real-time synchronization across multiple users",
-      "Designing an intuitive UI for complex task relationships",
-      "Optimizing database queries for large datasets",
-      "Ensuring data consistency in concurrent operations"
+      "Building accurate classification models for subtle stroke differences",
+      "Developing comprehensive analysis of different stroke phases",
+      "Feature reduction and selection for optimal model performance",
     ],
     learnings: [
-      "Advanced React patterns and state management",
-      "WebSocket implementation and real-time data handling",
-      "Database design and optimization techniques",
-      "User experience design principles",
-      "Agile development methodologies"
+      "Support Vector Machine implementation for movement classification",
+      "Data preprocessing and feature analysis from sports performance data",
+      "Sports biomechanics and paddling technique analysis"
     ],
     screenshots: [
       "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop"
     ]
-  },
-  {
+  },  {
     id: "ai-chatbot",
     title: "FlightHub",
-    shortDescription: "An intelligent chatbot using natural language processing to provide automated customer support.",
-    description: "An AI-powered chatbot built with Python and machine learning libraries that can understand and respond to customer inquiries naturally. The system uses NLP techniques to process user input and provide relevant responses.",
-    technologies: ["Python", "TensorFlow", "NLTK", "Flask", "JavaScript", "CSS"],
+    shortDescription: "A comprehensive flight booking system with customer and airline staff interfaces for managing travel.",
+    description: "FlightHub is a full-stack flight booking and management system that serves both customers and airline staff. Built with Python Flask, MySQL, and modern front-end technologies, it simulates a complete airline reservation system with robust functionality for searching, booking, managing, and reviewing flights across multiple airports and aircraft.",
+    technologies: ["Python", "Flask", "MySQL", "HTML", "CSS", "JavaScript"],
     image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop",
-    github: "https://github.com/yourusername/ai-chatbot",
-    role: "AI Developer & Backend Engineer",
+    github: "https://github.com/anthony-lamelas/FlightHub",
+    role: "Full-Stack Developer",
     features: [
-      "Natural language understanding and processing",
-      "Intent recognition and entity extraction",
-      "Context-aware conversation handling",
-      "Integration with existing customer service systems",
-      "Analytics dashboard for conversation insights",
-      "Multi-language support"
+      "User authentication system with separate customer and staff portals",
+      "Comprehensive flight search with filtering capabilities",
+      "Booking management for customers with ticket confirmation",
+      "Flight creation and management for airline staff",
+      "Airport and airplane database management",
+      "Customer reviews and ratings for flights",
+      "Comment system for customer feedback on services"
     ],
     challenges: [
-      "Training the model with limited conversational data",
-      "Handling ambiguous user queries effectively",
-      "Maintaining conversation context across sessions",
-      "Balancing response accuracy with speed"
+      "Designing a relational database schema for complex flight data",
+      "Implementing role-based access control for staff and customers",
+      "Creating an intuitive booking flow with constraints checking",
+      "Developing efficient flight search with multiple filters",
+      "Ensuring data integrity across interconnected tables"
     ],
     learnings: [
-      "Machine learning model training and optimization",
-      "Natural language processing techniques",
-      "API design and integration patterns",
-      "Model deployment and monitoring strategies",
-      "Data preprocessing and feature engineering"
+      "Full-stack web application development with Flask",
+      "Database design and optimization for relational systems",
+      "User authentication and session management",
+      "UI/UX considerations for complex booking systems"
     ],
     screenshots: [
       "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop"
     ]
-  },
-  {
+  },  {
     id: "data-visualization",
     title: "FaceCrime",
-    shortDescription: "A dynamic dashboard for visualizing complex datasets with interactive charts and filters.",
-    description: "A comprehensive data visualization platform that transforms raw data into meaningful insights through interactive charts, graphs, and filtering capabilities. Built with modern web technologies to handle large datasets efficiently.",
-    technologies: ["React", "D3.js", "Python", "Pandas", "PostgreSQL", "Docker"],
+    shortDescription: "A facial recognition tool that compares user faces against a database of 700,000+ sex offenders using AI and vector search.",
+    description: "FaceCrime is an award-winning project built for the MongoDB x Voxel51 Hackathon that leverages advanced facial recognition technology. It allows users to either upload a facial image or capture one through their device camera, then employs cosine similarity with CLIP embeddings to search a database of over 700,000 sex offenders in the US. The system returns demographic information and links to government records for any potential matches.",
+    technologies: ["React", "TypeScript", "Python", "CLIP", "PostgreSQL", "pgvector"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    github: "https://github.com/yourusername/data-viz-dashboard",
-    demo: "https://dataviz-demo.com",
-    role: "Frontend Developer & Data Analyst",
+    github: "https://github.com/anthony-lamelas/FaceCrime_backend",
+    demo: "https://facecrime.io",
+    role: "Frontend Developer",
     features: [
-      "Interactive charts with zoom and filter capabilities",
-      "Real-time data updates and streaming",
-      "Custom dashboard creation tools",
-      "Data export functionality in multiple formats",
-      "Responsive design for mobile and desktop",
-      "Advanced filtering and search capabilities"
+      "Face capture via device camera or file upload",
+      "AI-powered facial similarity detection using CLIP embeddings",
+      "Vector search implementation with pgvector",
+      "Demographic information display for potential matches",
+      "Links to government records of crimes committed",
+      "Real-time processing and search results"
     ],
     challenges: [
-      "Rendering large datasets without performance issues",
-      "Creating intuitive user interactions for complex data",
-      "Ensuring cross-browser compatibility for SVG graphics",
-      "Implementing efficient data streaming and updates"
+      "Software development in a short time frame (24 hours)", 
+      "Handling large-scale image processing efficiently",
+      "Frontend integration with complex backend APIs",
     ],
     learnings: [
-      "Advanced D3.js techniques and SVG manipulation",
-      "Performance optimization for large datasets",
-      "Data processing and transformation workflows",
-      "User interface design for data-heavy applications",
-      "Database optimization for analytical queries"
+      "AI embedding generation with CLIP models",
+      "Frontend development with React and TypeScript",
+      "Integration between AI models and user interfaces",
+      "Ethical considerations in facial recognition applications"
     ],
     screenshots: [
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop"
     ]
-  },
-  {
+  },  {
     id: "mobile-fitness-app",
     title: "Scaling Semantic Categories in Vision Transformers",
-    shortDescription: "A React Native app for tracking workouts, nutrition, and fitness progress with social features.",
-    description: "A comprehensive mobile fitness application that helps users track their workouts, monitor nutrition, and stay motivated through social features and gamification elements. Built with React Native for cross-platform compatibility.",
-    technologies: ["React Native", "Firebase", "Redux", "Node.js", "Express", "MongoDB"],
+    shortDescription: "Research exploring how increasing semantic categories impacts classification performance of vision transformers (ViTs).",
+    description: "This study explores the impact of scaling semantic categories on the image classification performance of vision transformers (ViTs). Using the CLIP server provided by Jina AI for experimentation, the research hypothesizes that as the number of ground truth and artificially introduced semantically equivalent categories increases, the labeling accuracy of ViTs improves until a theoretical maximum is reached. Through systematic testing across various datasets, the findings show that semantic scaling initially increases model performance by approximately 2% before diminishing returns or performance decline occurs.",
+    technologies: ["Python", "Pandas", "Matplotlib", "CLIP", "Jina AI", "Unix Command Line", "LaTeX"],
     image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
-    github: "https://github.com/yourusername/fitness-app",
-    role: "Mobile App Developer",
+    github: "https://github.com/Pomu-io/CLIP_category_singularity",
+    demo: "https://arxiv.org/abs/2503.12617",
+    role: "Research Developer",
     features: [
-      "Workout tracking with custom exercise creation",
-      "Nutrition logging with barcode scanning",
-      "Progress visualization with charts and metrics",
-      "Social features including friend challenges",
-      "Push notifications for motivation and reminders",
-      "Offline functionality with data synchronization"
+      "Custom functions for testing Vision Transformer accuracy across multiple datasets",
+      "Systematic introduction of semantically equivalent categories",
+      "Comprehensive analysis of accuracy trends until plateau",
+      "Evaluation across diverse Kaggle datasets",
+      "Data visualization of performance metrics",
+      "Format adaptation for diverse dataset structures"
     ],
     challenges: [
-      "Implementing smooth animations for workout interfaces",
-      "Managing offline data storage and synchronization",
-      "Optimizing app performance for older devices",
-      "Integrating with various health and fitness APIs"
+      "Processing and standardizing diverse image dataset formats",
+      "Creating methodology for introducing equivalent semantic categories",
+      "Determining the optimal threshold for category introduction",
+      "Analyzing complex accuracy trends across different datasets",
     ],
     learnings: [
-      "Mobile app development best practices",
-      "Cross-platform development with React Native",
-      "Mobile UI/UX design principles",
-      "Device sensor integration and data collection",
-      "App store deployment and distribution processes"
+      "Vision Transformer behavior with scaled semantic categories",
+      "Advanced data analysis techniques",
+      "Statistical methods for identifying performance plateaus",
+      "Research paper methodology and publication process",
     ],
     screenshots: [
       "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1434596922112-19c563067271?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"
     ]
-  },
-  {
+  },  {
     id: "e-commerce-platform",
     title: "Panelize",
-    shortDescription: "A full-featured online marketplace with payment processing, inventory management, and admin dashboard.",
-    description: "A complete e-commerce solution featuring user authentication, product catalog management, shopping cart functionality, secure payment processing, and comprehensive admin tools for managing orders and inventory.",
-    technologies: ["React", "TypeScript", "Node.js", "Stripe", "PostgreSQL", "AWS"],
+    shortDescription: "A full-stack comic book/manga generation application using AI for panel prompting and image generation.",
+    description: "Panelize is a comprehensive comic book and manga generation application that leverages prompt engineering and various AI technologies. The system uses GPT-4 for panel prompting, DALL-E for image generation, BLIP for image captioning, and Flask for backend development, allowing users to create complete visual stories with custom themes.",
+    technologies: ["React", "TypeScript", "Flask", "GPT-4", "DALL-E", "BLIP"],
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-    github: "https://github.com/yourusername/ecommerce-platform",
-    demo: "https://ecommerce-demo.com",
-    role: "Full-Stack Developer & System Architect",
+    github: "https://github.com/anthony-lamelas/Panelize",
+    demo: "https://panelize-demo.com",
+    role: "Lead Developer",    
     features: [
-      "Complete user authentication and profile management",
-      "Advanced product search and filtering system",
-      "Shopping cart with persistent storage",
-      "Secure payment processing with Stripe integration",
-      "Order tracking and history management",
-      "Admin dashboard for inventory and order management"
+      "AI-driven comic panel sequence generation",
+      "Custom theme integration for personalized stories",
+      "Image generation through DALL-E integration",
+      "Automatic captioning with BLIP technology",
+      "Full-stack architecture with React frontend and Flask backend",
+      "User story management and saving capabilities"
     ],
     challenges: [
-      "Implementing secure payment processing workflows",
-      "Designing scalable database architecture for products and orders",
-      "Creating efficient search and filtering algorithms",
-      "Ensuring data security and PCI compliance"
+      "Implementing effective prompt engineering for coherent story generation",
+      "Integrating multiple AI technologies into a unified workflow",
+      "Creating a responsive and intuitive UI for comic creation",
     ],
     learnings: [
-      "E-commerce architecture and design patterns",
-      "Payment gateway integration and security",
-      "Database design for complex business logic",
-      "Cloud deployment and infrastructure management",
-      "Security best practices for web applications"
+      "Advanced prompt engineering techniques for GPT-4",
+      "AI image generation pipeline development",
+      "Full-stack application architecture with AI integration",
     ],
     screenshots: [
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
     ]
-  },
-  {
+  },  {
     id: "blockchain-voting",
     title: "PaddlePrompt",
-    shortDescription: "A secure and transparent voting system built on blockchain technology to ensure election integrity.",
-    description: "A decentralized voting platform that leverages blockchain technology to create a secure, transparent, and tamper-proof voting system. Features smart contracts for vote validation and a user-friendly interface for voters and administrators.",
-    technologies: ["Solidity", "Ethereum", "Web3.js", "React", "Truffle", "MetaMask"],
+    shortDescription: "An LLM-based AI assistant specifically trained on Concrete Canoe competition proposals with RAG capabilities.",
+    description: "PaddlePrompt is a specialized AI assistant created by fine-tuning an OpenOrca Llama model on historical Concrete Canoe competition proposals. The system enhances proposal generation and technical documentation with domain-specific knowledge, leveraging a Pinecone vector database for Retrieval-Augmented Generation (RAG) to provide accurate and contextual responses for concrete canoe engineering.",
+    technologies: ["Python", "Flask", "Pinecone", ],
     image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=600&fit=crop",
-    github: "https://github.com/yourusername/blockchain-voting",
-    role: "Blockchain Developer & Smart Contract Engineer",
+    github: "https://github.com/anthony-lamelas/PaddePrompt",
+    role: "Lead Developer",    
     features: [
-      "Smart contract-based vote recording and validation",
-      "Cryptographic voter authentication system",
-      "Real-time vote counting with transparency",
-      "Immutable audit trail for all transactions",
-      "User-friendly web interface for voting",
-      "Administrative tools for election management"
+      "Custom fine-tuning of OpenOrca Llama model on competition-specific data",
+      "Pinecone vector database for efficient RAG implementation",
+      "Enhanced understanding of concrete canoe engineering terminology",
     ],
     challenges: [
-      "Ensuring voter privacy while maintaining transparency",
-      "Optimizing smart contract gas costs",
-      "Creating intuitive UX for blockchain interactions",
-      "Implementing robust security measures against attacks"
+      "Creating a comprehensive dataset from limited competition proposals",
+      "Fine-tuning model parameters without overfitting",
+      "Implementing effective RAG strategies for technical documents"
     ],
     learnings: [
-      "Blockchain development and smart contract programming",
-      "Cryptocurrency and decentralized application concepts",
-      "Security considerations for distributed systems",
-      "Web3 integration and wallet connectivity",
-      "Consensus mechanisms and blockchain governance"
+      "Vector database implementation and query optimization",
+      "Retrieval-Augmented Generation techniques and best practices",
     ],
     screenshots: [
       "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=600&fit=crop",
