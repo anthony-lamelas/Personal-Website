@@ -125,7 +125,7 @@ const ProjectDetail = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <Target className="text-blue-400 mr-3" size={28} />
-                  <h2 className="text-3xl font-bold text-white">Challenges & Solutions</h2>
+                  <h2 className="text-3xl font-bold text-white">Challenges</h2>
                 </div>
                 <div className="space-y-4">
                   {project.challenges.map((challenge, index) => (

@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Heart, Target, Lightbulb } from "lucide-react";
+import { Code, Heart, Target, Lightbulb, Briefcase } from "lucide-react";
 
 const About = () => {
   return (
@@ -57,35 +57,6 @@ const About = () => {
             </CardContent>
           </Card>
 
-          {/* Why CS */}
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-            <CardContent className="p-8">
-              <div className="flex items-center mb-6">
-                <Code className="text-blue-400 mr-3" size={28} />
-                <h2 className="text-3xl font-bold text-white">Why Computer Science?</h2>
-              </div>
-              <div className="text-gray-300 space-y-4 text-lg leading-relaxed">
-                <p>
-                  Computer science represents the perfect intersection of creativity, logic, and impact. 
-                  Every day brings new challenges that require innovative thinking and technical precision. 
-                  I'm drawn to the field because it offers endless opportunities to learn, create, and solve 
-                  real-world problems.
-                </p>
-                <p>
-                  What excites me most is the potential to build solutions that can scale globally and 
-                  positively impact millions of lives. Whether it's developing more efficient algorithms, 
-                  creating intuitive user interfaces, or contributing to cutting-edge research, CS provides 
-                  the tools to turn ideas into reality.
-                </p>
-                <p>
-                  The rapid evolution of technology means there's always something new to explore - from 
-                  artificial intelligence and machine learning to web development and cybersecurity. This 
-                  constant growth keeps me motivated and engaged with my studies and projects.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
           {/* Goals */}
           <Card className="bg-white/10 backdrop-blur-sm border-white/20">
             <CardContent className="p-8">
@@ -111,6 +82,70 @@ const About = () => {
                   technical leader who can bridge the gap between complex technology and user needs. 
                   I envision myself either leading engineering teams at innovative companies or starting 
                   my own venture focused on solving important problems through technology.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Experience */}
+          <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+            <CardContent className="p-8">
+              <div className="flex items-center mb-6">
+                <Briefcase className="text-blue-400 mr-3" size={28} />
+                <h2 className="text-3xl font-bold text-white">Experience</h2>
+              </div>
+              <div className="space-y-6">
+                {/* Add your job experiences here */}
+                <div className="border-l-2 border-blue-400 pl-6 pb-6">
+                  <h3 className="text-xl font-semibold text-white mb-2">Job Title</h3>
+                  <p className="text-blue-300 mb-2">Company Name | Duration</p>
+                  <p className="text-gray-300 mb-3">Brief description of your role and responsibilities.</p>
+                  <ul className="text-gray-300 space-y-1">
+                    <li>• Key achievement or responsibility</li>
+                    <li>• Another important accomplishment</li>
+                    <li>• Skills or technologies used</li>
+                  </ul>
+                </div>
+                
+                {/* You can duplicate this structure for additional jobs */}
+                <div className="border-l-2 border-blue-400 pl-6 pb-6">
+                  <h3 className="text-xl font-semibold text-white mb-2">Another Job Title</h3>
+                  <p className="text-blue-300 mb-2">Another Company | Duration</p>
+                  <p className="text-gray-300 mb-3">Brief description of your role and responsibilities.</p>
+                  <ul className="text-gray-300 space-y-1">
+                    <li>• Key achievement or responsibility</li>
+                    <li>• Another important accomplishment</li>
+                    <li>• Skills or technologies used</li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Why CS */}
+          <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+            <CardContent className="p-8">
+              <div className="flex items-center mb-6">
+                <Code className="text-blue-400 mr-3" size={28} />
+                <h2 className="text-3xl font-bold text-white">Why Computer Science?</h2>
+              </div>
+              <div className="text-gray-300 space-y-4 text-lg leading-relaxed">
+                <p>
+                  Computer science represents the perfect intersection of creativity, logic, and impact. 
+                  Every day brings new challenges that require innovative thinking and technical precision. 
+                  I'm drawn to the field because it offers endless opportunities to learn, create, and solve 
+                  real-world problems.
+                </p>
+                <p>
+                  What excites me most is the potential to build solutions that can scale globally and 
+                  positively impact millions of lives. Whether it's developing more efficient algorithms, 
+                  creating intuitive user interfaces, or contributing to cutting-edge research, CS provides 
+                  the tools to turn ideas into reality.
+                </p>
+                <p>
+                  The rapid evolution of technology means there's always something new to explore - from 
+                  artificial intelligence and machine learning to web development and cybersecurity. This 
+                  constant growth keeps me motivated and engaged with my studies and projects.
                 </p>
               </div>
             </CardContent>
