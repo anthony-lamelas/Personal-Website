@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Heart, Target, Lightbulb, Briefcase, Gamepad2, Award } from "lucide-react";
+import { Code, Heart, Target, Lightbulb, Briefcase, Gamepad2, Award, GraduationCap } from "lucide-react";
 
 const About = () => {
   return (
@@ -99,6 +99,29 @@ const About = () => {
                     <li>• Composed SQL queries in Mode (a web-based analytics platform) to pull data from the Snowflake data warehouse</li>
                     <li>• Analyzed over 75 fields of PC monitoring data by running tailored SQL queries and identifying key relationships among tables, leading to informed strategic recommendations utilizing Tableau</li>
                   </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Education */}
+          <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+            <CardContent className="p-8">
+              <div className="flex items-center mb-6">
+                <GraduationCap className="text-blue-400 mr-3" size={28} />
+                <h2 className="text-3xl font-bold text-white">Education</h2>
+              </div>
+              <div className="space-y-6">
+                <div className="border-l-2 border-blue-400 pl-6 pb-6">
+                  <h3 className="text-xl font-semibold text-white mb-2">New York University Tandon School of Engineering</h3>
+                  <p className="text-blue-300 mb-2">Sep 2023 - May 2027</p>
+                  <p className="text-gray-300 mb-3">Major: Computer Science, Minor: Mathematics</p>
+                </div>
+                
+                <div className="border-l-2 border-blue-400 pl-6 pb-6">
+                  <h3 className="text-xl font-semibold text-white mb-2">Belen Jesuit Preparatory School</h3>
+                  <p className="text-blue-300 mb-2">August 2019 - May 2023</p>
+                  <p className="text-gray-300 mb-3">High School Diploma</p>
                 </div>
               </div>
             </CardContent>
