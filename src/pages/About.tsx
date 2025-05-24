@@ -119,7 +119,8 @@ const About = () => {
                   "Weightlifting",
                   "Movies",
                   "Anime",
-                  "Trying New Foods"
+                  "Trying New Foods",
+                  "Travel"
                 ].map((hobby) => (
                   <div key={hobby} className="bg-white/5 backdrop-blur-sm rounded-lg p-4 text-center hover:bg-white/10 transition-all duration-300">
                     <p className="text-white font-medium">{hobby}</p>
