@@ -1,3 +1,4 @@
+
 export interface Project {
   id: string;
   title: string;
@@ -48,7 +49,8 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop"
     ]
-  },  {
+  },
+  {
     id: "window-warden",
     title: "Window Warden",
     shortDescription: "An Arduino-powered window cleaning robot capable of traversing and cleaning semi-vertical glass surfaces.",
@@ -56,7 +58,8 @@ export const projects: Project[] = [
     technologies: ["Arduino", "C", "DC Motors", "Ultrasonic Sensors"],
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
     github: "https://github.com/anthony-lamelas/Window-Warden-Code",
-    role: "Robotics Engineer",    features: [
+    role: "Robotics Engineer",
+    features: [
       "Arduino-based motor control system for vertical movement",
       "Ultrasonic sensor integration for edge detection",
       "Liquid dispensing mechanism for cleaning solution",
@@ -224,7 +227,7 @@ export const projects: Project[] = [
     title: "PaddlePrompt",
     shortDescription: "An LLM-based AI assistant specifically trained on Concrete Canoe competition proposals with RAG capabilities.",
     description: "PaddlePrompt is a specialized AI assistant created by fine-tuning an OpenOrca Llama model on historical Concrete Canoe competition proposals. The system enhances proposal generation and technical documentation with domain-specific knowledge, leveraging a Pinecone vector database for Retrieval-Augmented Generation (RAG) to provide accurate and contextual responses for concrete canoe engineering.",
-    technologies: ["Python", "Flask", "Pinecone", ],
+    technologies: ["Python", "Flask", "Pinecone"],
     image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=600&fit=crop",
     github: "https://github.com/anthony-lamelas/PaddePrompt",
     role: "Lead Developer",    
@@ -246,6 +249,41 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=600&fit=crop"
+    ]
+  },
+  {
+    id: "e20-assembly-simulator",
+    title: "E20 Assembly Simulator",
+    shortDescription: "A C++ assembly language simulator for the E20 instruction set with debugging and visualization capabilities.",
+    description: "A comprehensive assembly language simulator written in C++ that emulates the E20 instruction set architecture. The simulator features a complete implementation of E20 assembly language processing, including instruction parsing, execution, memory management, and debugging capabilities. It provides an educational platform for understanding low-level computer architecture and assembly language programming.",
+    technologies: ["C++", "Assembly Language", "Memory Management"],
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+    github: "https://github.com/anthony-lamelas/E20-Assembly-Simulator",
+    role: "Systems Developer",
+    features: [
+      "Complete E20 instruction set implementation",
+      "Assembly language parsing and validation",
+      "Memory management and register simulation",
+      "Step-by-step debugging capabilities",
+      "Instruction execution visualization",
+      "Error handling and diagnostics"
+    ],
+    challenges: [
+      "Implementing accurate instruction set architecture simulation",
+      "Creating efficient memory management systems",
+      "Developing comprehensive error handling for invalid instructions",
+      "Building debugging tools for assembly language programs"
+    ],
+    learnings: [
+      "Low-level systems programming in C++",
+      "Computer architecture and instruction set design",
+      "Assembly language processing and interpretation",
+      "Memory management and pointer manipulation"
+    ],
+    screenshots: [
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop"
     ]
   }
 ];
