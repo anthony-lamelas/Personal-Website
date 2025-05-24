@@ -13,7 +13,7 @@ const Projects = () => {
           <h1 className="text-5xl font-bold text-white mb-6">My Projects</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
             A collection of projects that showcase my skills in web development, 
-            mobile apps, AI/ML, and more. Each project represents a unique challenge 
+           AI/ML, and more. Each project represents a unique challenge 
             and learning opportunity.
           </p>
         </div>
