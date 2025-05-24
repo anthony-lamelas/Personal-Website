@@ -48,36 +48,28 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop"
     ]
-  },
-  {
+  },  {
     id: "window-warden",
     title: "Window Warden",
-    shortDescription: "A comprehensive window management and security monitoring application for desktop environments.",
-    description: "Window Warden is a desktop application designed to enhance window management and provide security monitoring for workspaces. The application tracks window usage patterns, provides intelligent window organization suggestions, and monitors for suspicious activity. Built with modern desktop technologies, it offers a seamless user experience while maintaining system performance.",
-    technologies: ["Electron", "Node.js", "TypeScript", "React", "SQLite"],
+    shortDescription: "An Arduino-powered window cleaning robot capable of traversing and cleaning semi-vertical glass surfaces.",
+    description: "This repository contains the code for Window Warden, a window cleaning robot project built as part of an Introduction to Engineering class at NYU. The goal of this project was to design and prototype a robotic system that can automate the cleaning of vertical window surfaces, combining hardware engineering with programming for effective movement and cleaning functions.",
+    technologies: ["Arduino", "C", "DC Motors", "Ultrasonic Sensors"],
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
-    github: "https://github.com/anthony-lamelas/window-warden",
-    demo: "https://window-warden-demo.com",
-    role: "Lead Developer",
-    features: [
-      "Real-time window tracking and organization",
-      "Intelligent workspace management with automated suggestions",
-      "Security monitoring for suspicious window behavior",
-      "Customizable window layouts and snap configurations",
-      "Activity logging and productivity analytics",
-      "Cross-platform compatibility for Windows, macOS, and Linux"
+    github: "https://github.com/anthony-lamelas/Window-Warden-Code",
+    role: "Robotics Engineer",    features: [
+      "Arduino-based motor control system for vertical movement",
+      "Ultrasonic sensor integration for edge detection",
+      "Liquid dispensing mechanism for cleaning solution",
+      "Ability to traverse surfaces at 45-degree angles",
     ],
     challenges: [
-      "Implementing efficient window tracking without impacting system performance",
-      "Developing cross-platform window management APIs",
-      "Creating intuitive user interfaces for complex window operations",
-      "Balancing security monitoring with user privacy concerns"
+      "Designing a lightweight yet secure frame for vertical adhesion",
+      "Creating reliable cleaning mechanisms for uneven surfaces",
     ],
     learnings: [
-      "Desktop application development with Electron framework",
-      "Operating system APIs for window management",
-      "Performance optimization for background monitoring applications",
-      "User experience design for productivity tools"
+      "Arduino programming for hardware control",
+      "Motor control and sensor integration",
+      "Physical prototyping and testing methodologies",
     ],
     screenshots: [
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
