@@ -1,6 +1,5 @@
-
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Heart, Target, Lightbulb, Briefcase } from "lucide-react";
+import { Code, Heart, Target, Lightbulb, Briefcase, Gamepad2 } from "lucide-react";
 
 const About = () => {
   return (
@@ -55,36 +54,6 @@ const About = () => {
             </CardContent>
           </Card>
 
-          {/* Goals */}
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-            <CardContent className="p-8">
-              <div className="flex items-center mb-6">
-                <Target className="text-blue-400 mr-3" size={28} />
-                <h2 className="text-3xl font-bold text-white">My Goals</h2>
-              </div>
-              <div className="text-gray-300 space-y-4 text-lg leading-relaxed">
-                <p>
-                  <strong className="text-white">Short-term:</strong> I'm focused on mastering fundamental 
-                  CS concepts while building a strong portfolio of diverse projects. I want to gain 
-                  experience through internships and contribute to open-source projects that align with 
-                  my interests.
-                </p>
-                <p>
-                  <strong className="text-white">Medium-term:</strong> After graduation, I aim to join a 
-                  technology company where I can work on meaningful projects that challenge me and allow 
-                  me to grow as a developer. I'm particularly interested in roles that involve full-stack 
-                  development, AI/ML, or product development.
-                </p>
-                <p>
-                  <strong className="text-white">Long-term:</strong> My ultimate goal is to become a 
-                  technical leader who can bridge the gap between complex technology and user needs. 
-                  I envision myself either leading engineering teams at innovative companies or starting 
-                  my own venture focused on solving important problems through technology.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
           {/* Experience */}
           <Card className="bg-white/10 backdrop-blur-sm border-white/20">
             <CardContent className="p-8">
@@ -131,6 +100,31 @@ const About = () => {
                     <li>• Analyzed over 75 fields of PC monitoring data by running tailored SQL queries and identifying key relationships among tables, leading to informed strategic recommendations utilizing Tableau</li>
                   </ul>
                 </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Hobbies */}
+          <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+            <CardContent className="p-8">
+              <div className="flex items-center mb-6">
+                <Gamepad2 className="text-blue-400 mr-3" size={28} />
+                <h2 className="text-3xl font-bold text-white">Hobbies & Interests</h2>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {[
+                  "Teaching",
+                  "Volleyball", 
+                  "Basketball",
+                  "Weightlifting",
+                  "Movies",
+                  "Anime",
+                  "Trying New Foods"
+                ].map((hobby) => (
+                  <div key={hobby} className="bg-white/5 backdrop-blur-sm rounded-lg p-4 text-center hover:bg-white/10 transition-all duration-300">
+                    <p className="text-white font-medium">{hobby}</p>
+                  </div>
+                ))}
               </div>
             </CardContent>
           </Card>
