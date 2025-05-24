@@ -93,7 +93,7 @@ const About = () => {
 
                 <div className="border-l-2 border-blue-400 pl-6 pb-6">
                   <h3 className="text-xl font-semibold text-white mb-2">Data & Analytics Intern</h3>
-                  <p className="text-blue-300 mb-2">Computer Science Department | June 2022 - July 2022</p>
+                  <p className="text-blue-300 mb-2">NZXT (PC Gaming Hardware) | June 2022 - July 2022</p>
                   <p className="text-gray-300 mb-3">Analyzing data leading to strategic recommendations.</p>
                   <ul className="text-gray-300 space-y-1">
                     <li>• Composed SQL queries in Mode (a web-based analytics platform) to pull data from the Snowflake data warehouse</li>
