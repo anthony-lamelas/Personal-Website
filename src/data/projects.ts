@@ -195,7 +195,7 @@ export const projects: Project[] = [
     shortDescription: "A full-stack comic book/manga generation application using AI for panel prompting and image generation.",
     description: "Panelize is a comprehensive comic book and manga generation application that leverages prompt engineering and various AI technologies. The system uses GPT-4 for panel prompting, DALL-E for image generation, BLIP for image captioning, and Flask for backend development, allowing users to create complete visual stories with custom themes.",
     technologies: ["React", "TypeScript", "Flask", "GPT-4", "DALL-E", "BLIP"],
-    image: "/lovable-uploads/ae6f8004-21de-4032-b08a-7a41a1461a07.png",
+    image: "/lovable-uploads/1f56a8a0-38c7-473b-bda2-987ea1d286a0.png",
     github: "https://github.com/anthony-lamelas/Panelize",
     demo: "https://panelize-demo.com",
     role: "Lead Developer",    
