@@ -1,3 +1,4 @@
+
 export interface Project {
   id: string;
   title: string;
@@ -56,7 +57,7 @@ export const projects: Project[] = [
     shortDescription: "An Arduino-powered window cleaning robot capable of traversing and cleaning semi-vertical glass surfaces.",
     description: "This repository contains the code for Window Warden, a window cleaning robot project built as part of an Introduction to Engineering class at NYU. The goal of this project was to design and prototype a robotic system that can automate the cleaning of vertical window surfaces, combining hardware engineering with programming for effective movement and cleaning functions.",
     technologies: ["Arduino", "C", "DC Motors", "Ultrasonic Sensors"],
-    image: "/lovable-uploads/209957d9-a7f6-4e8b-8bca-94c4e447f511.png",
+    image: "/lovable-uploads/a4d2d90b-aaf8-4432-be2a-412fd562d0bc.png",
     github: "https://github.com/anthony-lamelas/Window-Warden-Code",
     role: "Robotics Engineer",
     features: [
@@ -86,7 +87,7 @@ export const projects: Project[] = [
     shortDescription: "A comprehensive flight booking system with customer and airline staff interfaces for managing travel.",
     description: "FlightHub is a full-stack flight booking and management system that serves both customers and airline staff. Built with Python Flask, MySQL, and modern front-end technologies, it simulates a complete airline reservation system with robust functionality for searching, booking, managing, and reviewing flights across multiple airports and aircraft.",
     technologies: ["Python", "Flask", "MySQL", "HTML", "CSS", "JavaScript"],
-    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop",
+    image: "/lovable-uploads/ffa70535-f6b0-4076-a09d-95bcfe3e75d1.png",
     github: "https://github.com/anthony-lamelas/FlightHub",
     role: "Full-Stack Developer",
     features: [
@@ -123,7 +124,7 @@ export const projects: Project[] = [
     shortDescription: "A facial recognition tool that compares user faces against a database of 700,000+ sex offenders using AI and vector search.",
     description: "FaceCrime is an award-winning project built for the MongoDB x Voxel51 Hackathon that leverages advanced facial recognition technology. It allows users to either upload a facial image or capture one through their device camera, then employs cosine similarity with CLIP embeddings to search a database of over 700,000 sex offenders in the US. The system returns demographic information and links to government records for any potential matches.",
     technologies: ["React", "TypeScript", "Python", "CLIP", "PostgreSQL", "pgvector"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    image: "/lovable-uploads/cb258cc7-0bd5-4458-8ad6-bf8f74d14173.png",
     github: "https://github.com/anthony-lamelas/FaceCrime_backend",
     demo: "https://facecrime.io",
     role: "Frontend Developer",
@@ -158,7 +159,7 @@ export const projects: Project[] = [
     shortDescription: "Research exploring how increasing semantic categories impacts classification performance of vision transformers (ViTs).",
     description: "This study explores the impact of scaling semantic categories on the image classification performance of vision transformers (ViTs). Using the CLIP server provided by Jina AI for experimentation, the research hypothesizes that as the number of ground truth and artificially introduced semantically equivalent categories increases, the labeling accuracy of ViTs improves until a theoretical maximum is reached. Through systematic testing across various datasets, the findings show that semantic scaling initially increases model performance by approximately 2% before diminishing returns or performance decline occurs.",
     technologies: ["Python", "Pandas", "Matplotlib", "CLIP", "Jina AI", "Unix Command Line", "LaTeX"],
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+    image: "/lovable-uploads/b0852dc4-6ca3-4451-a365-325663e92c1c.png",
     github: "https://github.com/Pomu-io/CLIP_category_singularity",
     demo: "https://arxiv.org/abs/2503.12617",
     role: "Research Developer",
@@ -227,7 +228,7 @@ export const projects: Project[] = [
     shortDescription: "An LLM-based AI assistant specifically trained on Concrete Canoe competition proposals with RAG capabilities.",
     description: "PaddlePrompt is a specialized AI assistant created by fine-tuning an OpenOrca Llama model on historical Concrete Canoe competition proposals. The system enhances proposal generation and technical documentation with domain-specific knowledge, leveraging a Pinecone vector database for Retrieval-Augmented Generation (RAG) to provide accurate and contextual responses for concrete canoe engineering.",
     technologies: ["Python", "Flask", "Pinecone"],
-    image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=600&fit=crop",
+    image: "/lovable-uploads/88290740-5cf3-484e-a3db-912130ac6eea.png",
     github: "https://github.com/anthony-lamelas/PaddePrompt",
     role: "Lead Developer",    
     features: [
@@ -256,7 +257,7 @@ export const projects: Project[] = [
     shortDescription: "A C++ assembly language simulator for the E20 instruction set with debugging and visualization capabilities.",
     description: "A comprehensive assembly language simulator written in C++ that emulates the E20 instruction set architecture. The simulator features a complete implementation of E20 assembly language processing, including instruction parsing, execution, memory management, and debugging capabilities. It also includes a sophisticated customizable cache system with direct-associative and set-associative configurations across two levels (L1 and L2), allowing for detailed performance analysis and optimization of memory access patterns.",
     technologies: ["C++", "E20 Assembly Language"],
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+    image: "/lovable-uploads/0a0b7c67-82c8-446f-a009-412a1183345a.png",
     github: "https://github.com/anthony-lamelas/E20-Assembly-Simulator",
     role: "Systems Developer",    
     features: [
