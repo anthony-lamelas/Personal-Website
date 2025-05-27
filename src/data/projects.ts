@@ -57,7 +57,7 @@ export const projects: Project[] = [
     shortDescription: "An Arduino-powered window cleaning robot capable of traversing and cleaning semi-vertical glass surfaces.",
     description: "This repository contains the code for Window Warden, a window cleaning robot project built as part of an Introduction to Engineering class at NYU. The goal of this project was to design and prototype a robotic system that can automate the cleaning of vertical window surfaces, combining hardware engineering with programming for effective movement and cleaning functions.",
     technologies: ["Arduino", "C", "DC Motors", "Ultrasonic Sensors"],
-    image: "/lovable-uploads/0a0b7c67-82c8-446f-a009-412a1183345a.png",
+    image: "/lovable-uploads/a4d2d90b-aaf8-4432-be2a-412fd562d0bc.png",
     github: "https://github.com/anthony-lamelas/Window-Warden-Code",
     role: "Robotics Engineer",
     features: [
@@ -112,7 +112,11 @@ export const projects: Project[] = [
       "User authentication and session management",
       "UI/UX considerations for complex booking systems"
     ],
-    screenshots: []
+    screenshots: [
+      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop"
+    ]
   },
   {
     id: "data-visualization",
@@ -155,7 +159,7 @@ export const projects: Project[] = [
     shortDescription: "Research exploring how increasing semantic categories impacts classification performance of vision transformers (ViTs).",
     description: "This study explores the impact of scaling semantic categories on the image classification performance of vision transformers (ViTs). Using the CLIP server provided by Jina AI for experimentation, the research hypothesizes that as the number of ground truth and artificially introduced semantically equivalent categories increases, the labeling accuracy of ViTs improves until a theoretical maximum is reached. Through systematic testing across various datasets, the findings show that semantic scaling initially increases model performance by approximately 2% before diminishing returns or performance decline occurs.",
     technologies: ["Python", "Pandas", "Matplotlib", "CLIP", "Jina AI", "Unix Command Line", "LaTeX"],
-    image: "/lovable-uploads/48263676-0d04-449e-9a56-570b4d44b04b.png",
+    image: "/lovable-uploads/b0852dc4-6ca3-4451-a365-325663e92c1c.png",
     github: "https://github.com/Pomu-io/CLIP_category_singularity",
     demo: "https://arxiv.org/abs/2503.12617",
     role: "Research Developer",
@@ -179,7 +183,11 @@ export const projects: Project[] = [
       "Statistical methods for identifying performance plateaus",
       "Research paper methodology and publication process",
     ],
-    screenshots: []
+    screenshots: [
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1434596922112-19c563067271?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"
+    ]
   },
   {
     id: "e-commerce-platform",
@@ -187,7 +195,7 @@ export const projects: Project[] = [
     shortDescription: "A full-stack comic book/manga generation application using AI for panel prompting and image generation.",
     description: "Panelize is a comprehensive comic book and manga generation application that leverages prompt engineering and various AI technologies. The system uses GPT-4 for panel prompting, DALL-E for image generation, BLIP for image captioning, and Flask for backend development, allowing users to create complete visual stories with custom themes.",
     technologies: ["React", "TypeScript", "Flask", "GPT-4", "DALL-E", "BLIP"],
-    image: "/lovable-uploads/88290740-5cf3-484e-a3db-912130ac6eea.png",
+    image: "/lovable-uploads/ae6f8004-21de-4032-b08a-7a41a1461a07.png",
     github: "https://github.com/anthony-lamelas/Panelize",
     demo: "https://panelize-demo.com",
     role: "Lead Developer",    
@@ -220,7 +228,7 @@ export const projects: Project[] = [
     shortDescription: "An LLM-based AI assistant specifically trained on Concrete Canoe competition proposals with RAG capabilities.",
     description: "PaddlePrompt is a specialized AI assistant created by fine-tuning an OpenOrca Llama model on historical Concrete Canoe competition proposals. The system enhances proposal generation and technical documentation with domain-specific knowledge, leveraging a Pinecone vector database for Retrieval-Augmented Generation (RAG) to provide accurate and contextual responses for concrete canoe engineering.",
     technologies: ["Python", "Flask", "Pinecone"],
-    image: "/lovable-uploads/a4d2d90b-aaf8-4432-be2a-412fd562d0bc.png",
+    image: "/lovable-uploads/88290740-5cf3-484e-a3db-912130ac6eea.png",
     github: "https://github.com/anthony-lamelas/PaddePrompt",
     role: "Lead Developer",    
     features: [
@@ -237,7 +245,11 @@ export const projects: Project[] = [
       "Vector database implementation and query optimization",
       "Retrieval-Augmented Generation techniques and best practices",
     ],
-    screenshots: []
+    screenshots: [
+      "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=600&fit=crop"
+    ]
   },
   {
     id: "e20-assembly-simulator",
@@ -245,7 +257,7 @@ export const projects: Project[] = [
     shortDescription: "A C++ assembly language simulator for the E20 instruction set with debugging and visualization capabilities.",
     description: "A comprehensive assembly language simulator written in C++ that emulates the E20 instruction set architecture. The simulator features a complete implementation of E20 assembly language processing, including instruction parsing, execution, memory management, and debugging capabilities. It also includes a sophisticated customizable cache system with direct-associative and set-associative configurations across two levels (L1 and L2), allowing for detailed performance analysis and optimization of memory access patterns.",
     technologies: ["C++", "E20 Assembly Language"],
-    image: "/lovable-uploads/cad1b6de-68c0-4e3b-8a15-86c02e896a31.png",
+    image: "/lovable-uploads/0a0b7c67-82c8-446f-a009-412a1183345a.png",
     github: "https://github.com/anthony-lamelas/E20-Assembly-Simulator",
     role: "Systems Developer",    
     features: [
@@ -266,6 +278,10 @@ export const projects: Project[] = [
       "Assembly language processing and interpretation",
       "Memory management and pointer manipulation"
     ],
-    screenshots: []
+    screenshots: [
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop"
+    ]
   }
 ];
