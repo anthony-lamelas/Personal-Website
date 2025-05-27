@@ -2,7 +2,7 @@
 import { useParams, Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { ArrowLeft, ExternalLink, Github, Code, Lightbulb, Target, CheckCircle } from "lucide-react";
+import { ArrowLeft, ExternalLink, Github, Code, Lightbulb, Target, CheckCircle, FileText } from "lucide-react";
 import { projects } from "@/data/projects";
 
 const ProjectDetail = () => {
@@ -56,7 +56,8 @@ const ProjectDetail = () => {
                 <Github className="mr-2" size={20} />
                 View Code
               </a>
-            )}            {project.demo && (
+            )}
+            {project.demo && (
               <a
                 href={project.demo}
                 target="_blank"
@@ -156,6 +157,25 @@ const ProjectDetail = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Test Files Section - Only for Paddler Improvement System */}
+            {project.id === "task-manager" && (
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
+                    <FileText className="text-blue-400 mr-3" size={28} />
+                    <h2 className="text-3xl font-bold text-white">Test Files</h2>
+                  </div>
+                  <div className="text-center py-8">
+                    <FileText className="mx-auto text-gray-400 mb-4" size={48} />
+                    <p className="text-gray-300 mb-4">Upload your CSV test files to analyze paddling data</p>
+                    <p className="text-sm text-gray-400">
+                      You can upload up to 5 CSV files containing paddling stroke data for analysis
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
           </div>
 
           {/* Right Column - Screenshots */}
@@ -209,3 +229,4 @@ const ProjectDetail = () => {
 };
 
 export default ProjectDetail;
+
