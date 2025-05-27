@@ -157,34 +157,9 @@ const ProjectDetail = () => {
                 </div>
               </CardContent>
             </Card>
-
-            {/* Test Files Section - Only for Paddler Improvement System */}
-            {project.id === "task-manager" && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-6">
-                    <FileText className="text-blue-400 mr-3" size={28} />
-                    <h2 className="text-3xl font-bold text-white">Test Files</h2>
-                  </div>
-                  <div className="text-center py-8">
-                    <FileText className="mx-auto text-gray-400 mb-4" size={48} />
-                    <p className="text-gray-300 mb-4">Access the test CSV files for paddling data analysis</p>
-                    <a
-                      href="https://drive.google.com/drive/folders/1lxRGp_EEGV2_sx-Jugw489s3O0H7-HhG?usp=sharing"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300"
-                    >
-                      <ExternalLink className="mr-2" size={20} />
-                      View Test Files
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
-            )}
           </div>
 
-          {/* Right Column - Screenshots */}
+          {/* Right Column - Screenshots and Test Files */}
           <div className="space-y-6">
             <Card className="bg-white/10 backdrop-blur-sm border-white/20">
               <CardContent className="p-6">
@@ -215,6 +190,28 @@ const ProjectDetail = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Test Files Section - Only for Paddler Improvement System */}
+            {project.id === "task-manager" && (
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-4">Test Files</h3>
+                  <div className="text-center py-4">
+                    <FileText className="mx-auto text-gray-400 mb-3" size={40} />
+                    <p className="text-gray-300 mb-4 text-sm">Access the test CSV files for paddling data analysis</p>
+                    <a
+                      href="https://drive.google.com/drive/folders/1lxRGp_EEGV2_sx-Jugw489s3O0H7-HhG?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
+                    >
+                      <ExternalLink className="mr-2" size={16} />
+                      View Test Files
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
           </div>
         </div>
 
