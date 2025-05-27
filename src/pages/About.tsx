@@ -126,6 +126,9 @@ const About = () => {
                   <h3 className="text-xl font-semibold text-white mb-2">Belen Jesuit Preparatory School</h3>
                   <p className="text-blue-300 mb-2">August 2019 - May 2023 | Miami, FL</p>
                   <p className="text-gray-300 mb-3">High School Diploma</p>
+                   <ul className="text-gray-300 space-y-1">
+                    <li>• Cum Laude</li>
+                  </ul>
                 </div>
               </div>
             </CardContent>

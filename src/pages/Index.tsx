@@ -65,7 +65,7 @@ const Index = () => {
         
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-          <span className="text-gray-400 text-sm mb-2">Scroll to explore</span>
+          <span className="text-gray-400 text-sm mb-2">Scroll for More</span>
           <ChevronDown className="text-blue-400" size={24} />
         </div>
       </section>
