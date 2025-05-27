@@ -27,6 +27,9 @@ const ProjectDetail = () => {
     );
   }
 
+  // Check if this is a research paper project (no screenshots but has arXiv demo link)
+  const isResearchPaper = project.screenshots.length === 0 && project.demo && project.demo.includes("arxiv.org");
+
   return (
     <div className="pt-16 min-h-screen">
       <div className="max-w-6xl mx-auto px-4 py-20">
@@ -65,7 +68,7 @@ const ProjectDetail = () => {
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300"
               >
                 <ExternalLink className="mr-2" size={20} />
-                {project.id === "mobile-fitness-app" && project.demo.includes("arxiv.org") ? "View Paper" : "Live Demo"}
+                {project.demo.includes("arxiv.org") ? "View Paper" : "Live Demo"}
               </a>
             )}
           </div>
@@ -159,37 +162,62 @@ const ProjectDetail = () => {
             </Card>
           </div>
 
-          {/* Right Column - Screenshots and Test Files */}
+          {/* Right Column - Screenshots, Research Paper, or Test Files */}
           <div className="space-y-6">
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-white mb-4">Project Screenshots</h3>
-                <div className="space-y-4">
-                  {project.screenshots.map((screenshot, index) => (
-                    <Dialog key={index}>
-                      <DialogTrigger asChild>
-                        <div className="aspect-video overflow-hidden rounded-lg cursor-pointer hover:opacity-80 transition-opacity">
-                          <img
-                            src={screenshot}
-                            alt={`${project.title} screenshot ${index + 1}`}
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                          />
-                        </div>
-                      </DialogTrigger>
-                      <DialogContent className="max-w-4xl w-full p-0 bg-transparent border-none">
-                        <div className="relative">
-                          <img
-                            src={screenshot}
-                            alt={`${project.title} screenshot ${index + 1}`}
-                            className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
-                          />
-                        </div>
-                      </DialogContent>
-                    </Dialog>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            {/* Research Paper Section - for projects with arXiv links and no screenshots */}
+            {isResearchPaper ? (
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-4">Research Paper</h3>
+                  <div className="text-center py-4">
+                    <FileText className="mx-auto text-gray-400 mb-3" size={40} />
+                    <p className="text-gray-300 mb-4 text-sm">Read the full research paper on arXiv</p>
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
+                    >
+                      <ExternalLink className="mr-2" size={16} />
+                      View Paper
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            ) : (
+              /* Screenshots Section - for projects with screenshots */
+              project.screenshots.length > 0 && (
+                <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold text-white mb-4">Project Screenshots</h3>
+                    <div className="space-y-4">
+                      {project.screenshots.map((screenshot, index) => (
+                        <Dialog key={index}>
+                          <DialogTrigger asChild>
+                            <div className="aspect-video overflow-hidden rounded-lg cursor-pointer hover:opacity-80 transition-opacity">
+                              <img
+                                src={screenshot}
+                                alt={`${project.title} screenshot ${index + 1}`}
+                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                              />
+                            </div>
+                          </DialogTrigger>
+                          <DialogContent className="max-w-4xl w-full p-0 bg-transparent border-none">
+                            <div className="relative">
+                              <img
+                                src={screenshot}
+                                alt={`${project.title} screenshot ${index + 1}`}
+                                className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
+                              />
+                            </div>
+                          </DialogContent>
+                        </Dialog>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              )
+            )}
 
             {/* Test Files Section - Only for Paddler Improvement System */}
             {project.id === "task-manager" && (
