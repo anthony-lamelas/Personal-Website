@@ -1,3 +1,4 @@
+
 export interface Project {
   id: string;
   title: string;
@@ -55,7 +56,7 @@ export const projects: Project[] = [
     shortDescription: "An Arduino-powered window cleaning robot capable of traversing and cleaning semi-vertical glass surfaces.",
     description: "This repository contains the code for Window Warden, a window cleaning robot project built as part of an Introduction to Engineering class at NYU. The goal of this project was to design and prototype a robotic system that can automate the cleaning of vertical window surfaces, combining hardware engineering with programming for effective movement and cleaning functions.",
     technologies: ["Arduino", "C", "DC Motors", "Ultrasonic Sensors"],
-    image: "/lovable-uploads/acc57b61-e5b2-4e14-b7e4-4ef131fcd228.png",
+    image: "/lovable-uploads/209957d9-a7f6-4e8b-8bca-94c4e447f511.png",
     github: "https://github.com/anthony-lamelas/Window-Warden-Code",
     role: "Robotics Engineer",
     features: [
@@ -193,7 +194,7 @@ export const projects: Project[] = [
     shortDescription: "A full-stack comic book/manga generation application using AI for panel prompting and image generation.",
     description: "Panelize is a comprehensive comic book and manga generation application that leverages prompt engineering and various AI technologies. The system uses GPT-4 for panel prompting, DALL-E for image generation, BLIP for image captioning, and Flask for backend development, allowing users to create complete visual stories with custom themes.",
     technologies: ["React", "TypeScript", "Flask", "GPT-4", "DALL-E", "BLIP"],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+    image: "/lovable-uploads/ae6f8004-21de-4032-b08a-7a41a1461a07.png",
     github: "https://github.com/anthony-lamelas/Panelize",
     demo: "https://panelize-demo.com",
     role: "Lead Developer",    
@@ -216,9 +217,8 @@ export const projects: Project[] = [
       "Full-stack application architecture with AI integration",
     ],
     screenshots: [
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+      "/lovable-uploads/ae6f8004-21de-4032-b08a-7a41a1461a07.png",
+      "/lovable-uploads/72874790-6a83-496f-b4f5-5ab9b56d252c.png"
     ]
   },
   {
