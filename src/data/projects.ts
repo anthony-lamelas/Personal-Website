@@ -112,9 +112,7 @@ export const projects: Project[] = [
       "UI/UX considerations for complex booking systems"
     ],
     screenshots: [
-      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop"
+      
     ]
   },
   {
@@ -183,9 +181,6 @@ export const projects: Project[] = [
       "Research paper methodology and publication process",
     ],
     screenshots: [
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1434596922112-19c563067271?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop"
     ]
   },
   {
@@ -244,11 +239,7 @@ export const projects: Project[] = [
       "Vector database implementation and query optimization",
       "Retrieval-Augmented Generation techniques and best practices",
     ],
-    screenshots: [
-      "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=600&fit=crop"
-    ]
+    screenshots: []
   },
   {
     id: "e20-assembly-simulator",
@@ -277,10 +268,6 @@ export const projects: Project[] = [
       "Assembly language processing and interpretation",
       "Memory management and pointer manipulation"
     ],
-    screenshots: [
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop"
-    ]
+    screenshots: []
   }
 ];
