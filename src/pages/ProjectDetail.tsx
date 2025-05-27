@@ -1,6 +1,7 @@
 
 import { useParams, Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ArrowLeft, ExternalLink, Github, Code, Lightbulb, Target, CheckCircle } from "lucide-react";
 import { projects } from "@/data/projects";
 
@@ -164,13 +165,26 @@ const ProjectDetail = () => {
                 <h3 className="text-xl font-bold text-white mb-4">Project Screenshots</h3>
                 <div className="space-y-4">
                   {project.screenshots.map((screenshot, index) => (
-                    <div key={index} className="aspect-video overflow-hidden rounded-lg">
-                      <img
-                        src={screenshot}
-                        alt={`${project.title} screenshot ${index + 1}`}
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
+                    <Dialog key={index}>
+                      <DialogTrigger asChild>
+                        <div className="aspect-video overflow-hidden rounded-lg cursor-pointer hover:opacity-80 transition-opacity">
+                          <img
+                            src={screenshot}
+                            alt={`${project.title} screenshot ${index + 1}`}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-4xl w-full p-0 bg-transparent border-none">
+                        <div className="relative">
+                          <img
+                            src={screenshot}
+                            alt={`${project.title} screenshot ${index + 1}`}
+                            className="w-full h-auto max-h-[90vh] object-contain rounded-lg"
+                          />
+                        </div>
+                      </DialogContent>
+                    </Dialog>
                   ))}
                 </div>
               </CardContent>
