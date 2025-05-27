@@ -111,9 +111,7 @@ export const projects: Project[] = [
       "User authentication and session management",
       "UI/UX considerations for complex booking systems"
     ],
-    screenshots: [
-      
-    ]
+    screenshots: []
   },
   {
     id: "data-visualization",
@@ -145,9 +143,8 @@ export const projects: Project[] = [
       "Ethical considerations in facial recognition applications"
     ],
     screenshots: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop"
+      "/lovable-uploads/ba88cc7b-e114-4bb1-ae93-9ccdc2bbe87b.png",
+      "/lovable-uploads/1fdf931a-4725-4764-81d5-228ae54a1dc0.png"
     ]
   },
   {
@@ -180,8 +177,7 @@ export const projects: Project[] = [
       "Statistical methods for identifying performance plateaus",
       "Research paper methodology and publication process",
     ],
-    screenshots: [
-    ]
+    screenshots: []
   },
   {
     id: "e-commerce-platform",
