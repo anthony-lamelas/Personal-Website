@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ArrowRight, Code, Database, Laptop, BookOpen, Terminal, FileCode, GitBranch, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -64,9 +63,11 @@ const Index = () => {
         </div>
         
         {/* Scroll Indicator - Centered */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-          <span className="text-gray-400 text-sm mb-2 text-center">Scroll to explore</span>
-          <ChevronDown className="text-blue-400" size={24} />
+        <div className="absolute bottom-8 w-full flex justify-center">
+          <div className="flex flex-col items-center animate-bounce">
+            <span className="text-gray-400 text-sm mb-2">Scroll for More</span>
+            <ChevronDown className="text-blue-400" size={24} />
+          </div>
         </div>
       </section>
 
