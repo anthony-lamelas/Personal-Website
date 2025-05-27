@@ -1,4 +1,3 @@
-
 export interface Project {
   id: string;
   title: string;
@@ -56,7 +55,7 @@ export const projects: Project[] = [
     shortDescription: "An Arduino-powered window cleaning robot capable of traversing and cleaning semi-vertical glass surfaces.",
     description: "This repository contains the code for Window Warden, a window cleaning robot project built as part of an Introduction to Engineering class at NYU. The goal of this project was to design and prototype a robotic system that can automate the cleaning of vertical window surfaces, combining hardware engineering with programming for effective movement and cleaning functions.",
     technologies: ["Arduino", "C", "DC Motors", "Ultrasonic Sensors"],
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+    image: "/lovable-uploads/acc57b61-e5b2-4e14-b7e4-4ef131fcd228.png",
     github: "https://github.com/anthony-lamelas/Window-Warden-Code",
     role: "Robotics Engineer",
     features: [
@@ -75,9 +74,9 @@ export const projects: Project[] = [
       "Physical prototyping and testing methodologies",
     ],
     screenshots: [
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&h=600&fit=crop"
+      "/lovable-uploads/acc57b61-e5b2-4e14-b7e4-4ef131fcd228.png",
+      "/lovable-uploads/209957d9-a7f6-4e8b-8bca-94c4e447f511.png",
+      "/lovable-uploads/34fb0c7f-ea1f-4e0c-9329-1e3cca01329e.png"
     ]
   },
   {
@@ -254,7 +253,8 @@ export const projects: Project[] = [
   {
     id: "e20-assembly-simulator",
     title: "E20 Assembly Simulator",
-    shortDescription: "A C++ assembly language simulator for the E20 instruction set with debugging and visualization capabilities.",    description: "A comprehensive assembly language simulator written in C++ that emulates the E20 instruction set architecture. The simulator features a complete implementation of E20 assembly language processing, including instruction parsing, execution, memory management, and debugging capabilities. It also includes a sophisticated customizable cache system with direct-associative and set-associative configurations across two levels (L1 and L2), allowing for detailed performance analysis and optimization of memory access patterns.",
+    shortDescription: "A C++ assembly language simulator for the E20 instruction set with debugging and visualization capabilities.",
+    description: "A comprehensive assembly language simulator written in C++ that emulates the E20 instruction set architecture. The simulator features a complete implementation of E20 assembly language processing, including instruction parsing, execution, memory management, and debugging capabilities. It also includes a sophisticated customizable cache system with direct-associative and set-associative configurations across two levels (L1 and L2), allowing for detailed performance analysis and optimization of memory access patterns.",
     technologies: ["C++", "E20 Assembly Language"],
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
     github: "https://github.com/anthony-lamelas/E20-Assembly-Simulator",
