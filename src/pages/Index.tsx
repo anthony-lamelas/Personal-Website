@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { ArrowRight, Code, Database, Laptop, BookOpen, Terminal, FileCode, GitBranch } from "lucide-react";
+import { ArrowRight, Code, Database, Laptop, BookOpen, Terminal, FileCode, GitBranch, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -32,7 +32,7 @@ const Index = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-4">
+      <section className="min-h-screen flex items-center justify-center px-4 relative">
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
@@ -61,6 +61,12 @@ const Index = () => {
               </Link>
             </div>
           </div>
+        </div>
+        
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+          <span className="text-gray-400 text-sm mb-2">Scroll to explore</span>
+          <ChevronDown className="text-blue-400" size={24} />
         </div>
       </section>
 
