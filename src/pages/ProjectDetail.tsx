@@ -8,6 +8,10 @@ const ProjectDetail = () => {
   const { id } = useParams();
   const project = projects.find(p => p.id === id);
 
+  // Add debugging
+  console.log("Project ID:", id);
+  console.log("Project found:", project);
+
   if (!project) {
     return (
       <div className="pt-16 min-h-screen flex items-center justify-center">
@@ -137,7 +141,7 @@ const ProjectDetail = () => {
             )}
 
             {/* Other Contributors - Only for Semantic Scaling */}
-            {project.id === "scaling-semantic" && (
+            {project.id === "mobile-fitness-app" && (
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
