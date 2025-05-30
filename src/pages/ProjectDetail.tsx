@@ -287,8 +287,8 @@ const ProjectDetail = () => {
               </Card>
             )}
 
-            {/* Other Contributors - For Paddler Improvement System (task-manager) */}
-            {project.id === "task-manager" && (
+            {/* Other Contributors - For FlightHub (ai-chatbot) */}
+            {project.id === "ai-chatbot" && (
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
@@ -296,7 +296,40 @@ const ProjectDetail = () => {
                     <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-green-500 rounded-full flex items-center justify-center mx-auto mb-3">
                       <Users className="text-white" size={24} />
                     </div>
+                    <h4 className="text-lg font-semibold text-white mb-2">Cindy Zhao</h4>
+                    <a
+                      href="https://www.linkedin.com/in/cindyzhao1127/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold rounded-lg hover:from-green-700 hover:to-green-600 transition-all duration-300 text-sm"
+                    >
+                      <ExternalLink className="mr-2" size={16} />
+                      LinkedIn Profile
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Other Contributors - For Paddler Improvement System (task-manager) */}
+            {project.id === "task-manager" && (
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
+                  <div className="text-center py-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-orange-600 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <Users className="text-white" size={24} />
+                    </div>
                     <h4 className="text-lg font-semibold text-white mb-2">Shubham Parab</h4>
+                    <a
+                      href="https://www.linkedin.com/in/skparab1/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-semibold rounded-lg hover:from-orange-700 hover:to-orange-600 transition-all duration-300 text-sm"
+                    >
+                      <ExternalLink className="mr-2" size={16} />
+                      LinkedIn Profile
+                    </a>
                   </div>
                 </CardContent>
               </Card>
