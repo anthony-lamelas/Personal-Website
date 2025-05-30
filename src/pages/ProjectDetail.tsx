@@ -110,66 +110,6 @@ const ProjectDetail = () => {
               </CardContent>
             </Card>
 
-            {/* Other Contributors - Only for Paddler Improvement System */}
-            {project.id === "task-manager" && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-6">
-                    <Users className="text-blue-400 mr-3" size={28} />
-                    <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="flex items-center">
-                      <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center mr-4">
-                        <Users className="text-white" size={20} />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-white">Shubham Parab</h3>
-                        <a
-                          href="https://www.linkedin.com/in/skparab1/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-400 hover:text-blue-300 transition-colors text-sm"
-                        >
-                          View LinkedIn Profile
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            )}
-
-            {/* Other Contributors - Only for Semantic Scaling */}
-            {project.id === "mobile-fitness-app" && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-6">
-                    <Users className="text-blue-400 mr-3" size={28} />
-                    <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="flex items-center">
-                      <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center mr-4">
-                        <Users className="text-white" size={20} />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-white">Harrison Muchnic</h3>
-                        <a
-                          href="https://www.linkedin.com/in/harrisonmuchnic/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-400 hover:text-blue-300 transition-colors text-sm"
-                        >
-                          View LinkedIn Profile
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            )}
-
             {/* Features */}
             <Card className="bg-white/10 backdrop-blur-sm border-white/20">
               <CardContent className="p-8">
@@ -225,7 +165,7 @@ const ProjectDetail = () => {
             </Card>
           </div>
 
-          {/* Right Column - Screenshots, Research Paper, or Test Files */}
+          {/* Right Column - Screenshots, Research Paper, Contributors, or Test Files */}
           <div className="space-y-6">
             {/* Research Paper Section - for projects with arXiv links and no screenshots */}
             {isResearchPaper ? (
@@ -280,6 +220,30 @@ const ProjectDetail = () => {
                   </CardContent>
                 </Card>
               )
+            )}
+
+            {/* Other Contributors - For Semantic Scaling (mobile-fitness-app) */}
+            {project.id === "mobile-fitness-app" && (
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
+                  <div className="text-center py-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <Users className="text-white" size={24} />
+                    </div>
+                    <h4 className="text-lg font-semibold text-white mb-2">Harrison Muchnic</h4>
+                    <a
+                      href="https://www.linkedin.com/in/harrisonmuchnic/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
+                    >
+                      <ExternalLink className="mr-2" size={16} />
+                      LinkedIn Profile
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
             )}
 
             {/* Test Files Section - Only for Paddler Improvement System */}
