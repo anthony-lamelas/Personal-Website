@@ -9,7 +9,7 @@ import { panelize } from "./projects/panelize";
 import { paddlePrompt } from "./projects/paddleprompt";
 import { e20AssemblySimulator } from "./projects/e20-assembly-simulator";
 
-export { Project } from "../types/project";
+export type { Project } from "../types/project";
 
 export const projects: Project[] = [
   paddlerImprovementSystem,
