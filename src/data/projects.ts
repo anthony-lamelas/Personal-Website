@@ -1,4 +1,5 @@
 
+
 export interface Project {
   id: string;
   title: string;
@@ -149,7 +150,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "semantic-scaling-research",
+    id: "scaling-semantic-categories-vision-transformers",
     title: "Scaling Semantic Categories in Vision Transformers",
     shortDescription: "Research exploring how increasing semantic categories impacts classification performance of vision transformers (ViTs).",
     description: "This study explores the impact of scaling semantic categories on the image classification performance of vision transformers (ViTs). Using the CLIP server provided by Jina AI for experimentation, the research hypothesizes that as the number of ground truth and artificially introduced semantically equivalent categories increases, the labeling accuracy of ViTs improves until a theoretical maximum is reached. Through systematic testing across various datasets, the findings show that semantic scaling initially increases model performance by approximately 2% before diminishing returns or performance decline occurs.",
