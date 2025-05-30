@@ -287,6 +287,21 @@ const ProjectDetail = () => {
               </Card>
             )}
 
+            {/* Other Contributors - For Paddler Improvement System (task-manager) */}
+            {project.id === "task-manager" && (
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
+                  <div className="text-center py-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-green-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <Users className="text-white" size={24} />
+                    </div>
+                    <h4 className="text-lg font-semibold text-white mb-2">Shubham Parab</h4>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
             {/* Test Files Section - Only for Paddler Improvement System */}
             {project.id === "task-manager" && (
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
