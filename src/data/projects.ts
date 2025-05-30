@@ -1,3 +1,4 @@
+
 export interface Project {
   id: string;
   title: string;
@@ -17,7 +18,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "task-manager",
+    id: "paddler-improvement-system",
     title: "Paddler Improvement System",
     shortDescription: "ML-powered stroke analysis tool for NYU Concrete Canoe Team to improve paddling technique and performance.",
     description: "A data-driven system that analyzes paddler performance for the NYU Concrete Canoe Team. Using machine learning models (primarily SVM), the system classifies paddle strokes into optimal/suboptimal categories and provides detailed feedback on different phases of the stroke (catch, pull, release). The analysis helps team members improve their technique through targeted recommendations.",
@@ -81,7 +82,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "ai-chatbot",
+    id: "flighthub",
     title: "FlightHub",
     shortDescription: "A comprehensive flight booking system with customer and airline staff interfaces for managing travel.",
     description: "FlightHub is a full-stack flight booking and management system that serves both customers and airline staff. Built with Python Flask, MySQL, and modern front-end technologies, it simulates a complete airline reservation system with robust functionality for searching, booking, managing, and reviewing flights across multiple airports and aircraft.",
@@ -114,7 +115,7 @@ export const projects: Project[] = [
     screenshots: []
   },
   {
-    id: "data-visualization",
+    id: "facecrime",
     title: "FaceCrime",
     shortDescription: "A facial recognition tool that compares user faces against a database of 700,000+ sex offenders using AI and vector search.",
     description: "FaceCrime is an award-winning project built for the MongoDB x Voxel51 Hackathon that leverages advanced facial recognition technology. It allows users to either upload a facial image or capture one through their device camera, then employs cosine similarity with CLIP embeddings to search a database of over 700,000 sex offenders in the US. The system returns demographic information and links to government records for any potential matches.",
@@ -148,7 +149,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "mobile-fitness-app",
+    id: "semantic-scaling-research",
     title: "Scaling Semantic Categories in Vision Transformers",
     shortDescription: "Research exploring how increasing semantic categories impacts classification performance of vision transformers (ViTs).",
     description: "This study explores the impact of scaling semantic categories on the image classification performance of vision transformers (ViTs). Using the CLIP server provided by Jina AI for experimentation, the research hypothesizes that as the number of ground truth and artificially introduced semantically equivalent categories increases, the labeling accuracy of ViTs improves until a theoretical maximum is reached. Through systematic testing across various datasets, the findings show that semantic scaling initially increases model performance by approximately 2% before diminishing returns or performance decline occurs.",
@@ -180,7 +181,7 @@ export const projects: Project[] = [
     screenshots: []
   },
   {
-    id: "e-commerce-platform",
+    id: "panelize",
     title: "Panelize",
     shortDescription: "A full-stack comic book/manga generation application using AI for panel prompting and image generation.",
     description: "Panelize is a comprehensive comic book and manga generation application that leverages prompt engineering and various AI technologies. The system uses GPT-4 for panel prompting, DALL-E for image generation, BLIP for image captioning, and Flask for backend development, allowing users to create complete visual stories with custom themes.",
@@ -213,7 +214,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "blockchain-voting",
+    id: "paddleprompt",
     title: "PaddlePrompt",
     shortDescription: "An LLM-based AI assistant specifically trained on Concrete Canoe competition proposals with RAG capabilities.",
     description: "PaddlePrompt is a specialized AI assistant created by fine-tuning an OpenOrca Llama model on historical Concrete Canoe competition proposals. The system enhances proposal generation and technical documentation with domain-specific knowledge, leveraging a Pinecone vector database for Retrieval-Augmented Generation (RAG) to provide accurate and contextual responses for concrete canoe engineering.",

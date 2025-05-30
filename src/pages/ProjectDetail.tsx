@@ -222,8 +222,8 @@ const ProjectDetail = () => {
               )
             )}
 
-            {/* Other Contributors - For Semantic Scaling (mobile-fitness-app) */}
-            {project.id === "mobile-fitness-app" && (
+            {/* Other Contributors - For Semantic Scaling (semantic-scaling-research) */}
+            {project.id === "semantic-scaling-research" && (
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
@@ -246,8 +246,8 @@ const ProjectDetail = () => {
               </Card>
             )}
 
-            {/* Other Contributors - For FaceCrime (data-visualization) */}
-            {project.id === "data-visualization" && (
+            {/* Other Contributors - For FaceCrime (facecrime) */}
+            {project.id === "facecrime" && (
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
@@ -287,8 +287,8 @@ const ProjectDetail = () => {
               </Card>
             )}
 
-            {/* Other Contributors - For FlightHub (ai-chatbot) */}
-            {project.id === "ai-chatbot" && (
+            {/* Other Contributors - For FlightHub (flighthub) */}
+            {project.id === "flighthub" && (
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
@@ -311,8 +311,8 @@ const ProjectDetail = () => {
               </Card>
             )}
 
-            {/* Other Contributors - For Paddler Improvement System (task-manager) */}
-            {project.id === "task-manager" && (
+            {/* Other Contributors - For Paddler Improvement System (paddler-improvement-system) */}
+            {project.id === "paddler-improvement-system" && (
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
@@ -336,7 +336,7 @@ const ProjectDetail = () => {
             )}
 
             {/* Test Files Section - Only for Paddler Improvement System */}
-            {project.id === "task-manager" && (
+            {project.id === "paddler-improvement-system" && (
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-white mb-4">Test Files</h3>
