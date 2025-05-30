@@ -246,8 +246,8 @@ const ProjectDetail = () => {
               </Card>
             )}
 
-            {/* Other Contributors - For FaceCrime */}
-            {project.id === "facecrime" && (
+            {/* Other Contributors - For FaceCrime (data-visualization) */}
+            {project.id === "data-visualization" && (
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
