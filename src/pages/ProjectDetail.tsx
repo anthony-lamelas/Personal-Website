@@ -246,6 +246,47 @@ const ProjectDetail = () => {
               </Card>
             )}
 
+            {/* Other Contributors - For FaceCrime */}
+            {project.id === "facecrime" && (
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
+                  <div className="space-y-4">
+                    <div className="text-center py-4">
+                      <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <Users className="text-white" size={24} />
+                      </div>
+                      <h4 className="text-lg font-semibold text-white mb-2">Harrison Muchnic</h4>
+                      <a
+                        href="https://www.linkedin.com/in/harrisonmuchnic/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
+                      >
+                        <ExternalLink className="mr-2" size={16} />
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                    <div className="text-center py-4">
+                      <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <Users className="text-white" size={24} />
+                      </div>
+                      <h4 className="text-lg font-semibold text-white mb-2">Mike Odnis</h4>
+                      <a
+                        href="https://www.linkedin.com/in/mikeodnis/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-purple-600 transition-all duration-300 text-sm"
+                      >
+                        <ExternalLink className="mr-2" size={16} />
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
             {/* Test Files Section - Only for Paddler Improvement System */}
             {project.id === "task-manager" && (
               <Card className="bg-white/10 backdrop-blur-sm border-white/20">
