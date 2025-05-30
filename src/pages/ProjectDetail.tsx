@@ -1,8 +1,7 @@
-
 import { useParams, Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { ArrowLeft, ExternalLink, Github, Code, Lightbulb, Target, CheckCircle, FileText } from "lucide-react";
+import { ArrowLeft, ExternalLink, Github, Code, Lightbulb, Target, CheckCircle, FileText, Users } from "lucide-react";
 import { projects } from "@/data/projects";
 
 const ProjectDetail = () => {
@@ -106,6 +105,36 @@ const ProjectDetail = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Other Contributors - Only for Paddler Improvement System */}
+            {project.id === "task-manager" && (
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
+                    <Users className="text-blue-400 mr-3" size={28} />
+                    <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center mr-4">
+                        <Users className="text-white" size={20} />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-white">Shubham Parab</h3>
+                        <a
+                          href="https://www.linkedin.com/in/skparab1/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-400 hover:text-blue-300 transition-colors text-sm"
+                        >
+                          View LinkedIn Profile
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
 
             {/* Features */}
             <Card className="bg-white/10 backdrop-blur-sm border-white/20">
