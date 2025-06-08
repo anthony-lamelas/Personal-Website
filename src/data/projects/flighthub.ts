@@ -6,9 +6,10 @@ export const flightHub: Project = {
   title: "FlightHub",
   shortDescription: "A comprehensive flight booking system with customer and airline staff interfaces for managing travel.",
   description: "FlightHub is a full-stack flight booking and management system that serves both customers and airline staff. Built with Python Flask, MySQL, and modern front-end technologies, it simulates a complete airline reservation system with robust functionality for searching, booking, managing, and reviewing flights across multiple airports and aircraft.",
-  technologies: ["Python", "Flask", "MySQL", "HTML", "CSS", "JavaScript"],
+  technologies: ["Python", "Flask", "MySQL", "HTML", "CSS", "JavaScript", "Docker"],
   image: "/lovable-uploads/ffa70535-f6b0-4076-a09d-95bcfe3e75d1.png",
   github: "https://github.com/anthony-lamelas/FlightHub",
+  demo: "https://flighthub.onrender.com/",
   role: "Full-Stack Developer",
   features: [
     "User authentication system with separate customer and staff portals",
