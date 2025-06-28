@@ -7,7 +7,7 @@ export const wouldYouRather: Project = {
   shortDescription: "An interactive React application for answering and creating 'Would You Rather' questions to practice frontend development.",
   description: "Would You Rather is a React-based web application designed to practice and improve frontend development skills. Users can browse through various 'Would You Rather' questions, vote on their preferred options, and create their own custom questions. The application focuses on interactive user experience and state management in React.",
   technologies: ["React", "TypeScript", "HTML", "CSS", "JavaScript"],
-  image: "/placeholder.svg",
+  image: "/lovable-uploads/441701d7-ca1f-4010-977e-cda236e81a02.png",
   github: "https://github.com/anthony-lamelas/Would-You-Rather",
   demo: "https://would-you-rather-elfs.onrender.com/",
   role: "Frontend Developer",
