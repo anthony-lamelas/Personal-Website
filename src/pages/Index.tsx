@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { ArrowRight, Code, Database, Laptop, BookOpen, Terminal, FileCode, GitBranch, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -8,7 +9,7 @@ const Index = () => {
   const skills = [
     { name: "Python", icon: Code },
     { name: "JavaScript", icon: Code },
-    { name: "HTML/CSS", icon: FileCode },
+    { name: "TypeScript", icon: FileCode },
     { name: "SQL", icon: Database },
     { name: "C/C++", icon: Code },
     { name: "Git/GitHub", icon: GitBranch },
