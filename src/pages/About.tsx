@@ -14,7 +14,7 @@ const About = () => {
           <div className="mb-8 flex justify-center">
             <div className="relative w-80 h-80 overflow-hidden rounded-full border-4 border-white/20">
               <img
-                src="/lovable-uploads/48263676-0d04-449e-9a56-570b4d44b04b.png"
+                src="/images/48263676-0d04-449e-9a56-570b4d44b04b.png"
                 alt="Anthony Lamelas"
                 className="w-full h-full object-cover"
               />
