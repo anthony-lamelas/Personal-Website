@@ -17,16 +17,5 @@ export const e20AssemblySimulator: Project = {
     "Customizable two-level cache architecture (L1 and L2)",
     "Configurable direct-associative and set-associative cache modes",
   ],
-  challenges: [
-    "Implementing accurate instruction set architecture simulation",
-    "Designing a flexible cache hierarchy with multiple configuration options",
-    "Creating efficient memory management systems",
-  ],    
-  learnings: [
-    "Low-level systems programming in C++",
-    "Computer architecture and instruction set design",
-    "Assembly language processing and interpretation",
-    "Memory management and pointer manipulation"
-  ],
   screenshots: []
 };

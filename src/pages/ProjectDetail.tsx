@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { ArrowLeft, ExternalLink, Github, Code, Lightbulb, Target, CheckCircle, FileText, Users } from "lucide-react";
+import { ArrowLeft, ExternalLink, Github, Code, CheckCircle, FileText, Users } from "lucide-react";
 import { projects } from "@/data/projects";
 
 const ProjectDetail = () => {
@@ -128,41 +128,6 @@ const ProjectDetail = () => {
               </CardContent>
             </Card>
 
-            {/* Challenges */}
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-6">
-                  <Target className="text-blue-400 mr-3" size={28} />
-                  <h2 className="text-3xl font-bold text-white">Challenges</h2>
-                </div>
-                <div className="space-y-4">
-                  {project.challenges.map((challenge, index) => (
-                    <div key={index} className="flex items-start">
-                      <Target className="text-orange-400 mr-3 mt-1 flex-shrink-0" size={16} />
-                      <p className="text-gray-300">{challenge}</p>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Learnings */}
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-6">
-                  <Lightbulb className="text-blue-400 mr-3" size={28} />
-                  <h2 className="text-3xl font-bold text-white">What I Learned</h2>
-                </div>
-                <div className="space-y-4">
-                  {project.learnings.map((learning, index) => (
-                    <div key={index} className="flex items-start">
-                      <Lightbulb className="text-yellow-400 mr-3 mt-1 flex-shrink-0" size={16} />
-                      <p className="text-gray-300">{learning}</p>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Right Column - Screenshots, Research Paper, Contributors, or Test Files */}

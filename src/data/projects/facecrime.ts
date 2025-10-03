@@ -19,17 +19,6 @@ export const faceCrime: Project = {
     "Links to government records of crimes committed",
     "Real-time processing and search results"
   ],
-  challenges: [
-    "Software development in a short time frame (24 hours)", 
-    "Handling large-scale image processing efficiently",
-    "Frontend integration with complex backend APIs",
-  ],
-  learnings: [
-    "AI embedding generation with CLIP models",
-    "Frontend development with React and TypeScript",
-    "Integration between AI models and user interfaces",
-    "Ethical considerations in facial recognition applications"
-  ],
   screenshots: [
     "/images/ba88cc7b-e114-4bb1-ae93-9ccdc2bbe87b.png",
     "/images/1fdf931a-4725-4764-81d5-228ae54a1dc0.png"

@@ -16,14 +16,5 @@ export const paddlePrompt: Project = {
     "Pinecone vector database for efficient RAG implementation",
     "Enhanced understanding of concrete canoe engineering terminology",
   ],
-  challenges: [
-    "Creating a comprehensive dataset from limited competition proposals",
-    "Fine-tuning model parameters without overfitting",
-    "Implementing effective RAG strategies for technical documents"
-  ],
-  learnings: [
-    "Vector database implementation and query optimization",
-    "Retrieval-Augmented Generation techniques and best practices",
-  ],
   screenshots: []
 };

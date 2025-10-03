@@ -10,8 +10,6 @@ export interface Project {
   demo?: string;
   role: string;
   features: string[];
-  challenges: string[];
-  learnings: string[];
   screenshots: string[];
   testFiles?: string[];
 }

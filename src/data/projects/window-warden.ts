@@ -16,15 +16,6 @@ export const windowWarden: Project = {
     "Liquid dispensing mechanism for cleaning solution",
     "Ability to traverse surfaces at 45-degree angles",
   ],
-  challenges: [
-    "Designing a lightweight yet secure frame for vertical adhesion",
-    "Creating reliable cleaning mechanisms for uneven surfaces",
-  ],
-  learnings: [
-    "Arduino programming for hardware control",
-    "Motor control and sensor integration",
-    "Physical prototyping and testing methodologies",
-  ],
   screenshots: [
     "/images/acc57b61-e5b2-4e14-b7e4-4ef131fcd228.png",
     "/images/209957d9-a7f6-4e8b-8bca-94c4e447f511.png",

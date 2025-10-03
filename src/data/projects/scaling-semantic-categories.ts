@@ -19,17 +19,5 @@ export const scalingSemanticCategories: Project = {
     "Data visualization of performance metrics",
     "Format adaptation for diverse dataset structures"
   ],
-  challenges: [
-    "Processing and standardizing diverse image dataset formats",
-    "Creating methodology for introducing equivalent semantic categories",
-    "Determining the optimal threshold for category introduction",
-    "Analyzing complex accuracy trends across different datasets",
-  ],
-  learnings: [
-    "Vision Transformer behavior with scaled semantic categories",
-    "Advanced data analysis techniques",
-    "Statistical methods for identifying performance plateaus",
-    "Research paper methodology and publication process",
-  ],
   screenshots: []
 };

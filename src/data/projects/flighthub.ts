@@ -20,18 +20,5 @@ export const flightHub: Project = {
     "Customer reviews and ratings for flights",
     "Comment system for customer feedback on services"
   ],
-  challenges: [
-    "Designing a relational database schema for complex flight data",
-    "Implementing role-based access control for staff and customers",
-    "Creating an intuitive booking flow with constraints checking",
-    "Developing efficient flight search with multiple filters",
-    "Ensuring data integrity across interconnected tables"
-  ],
-  learnings: [
-    "Full-stack web application development with Flask",
-    "Database design and optimization for relational systems",
-    "User authentication and session management",
-    "UI/UX considerations for complex booking systems"
-  ],
   screenshots: []
 };

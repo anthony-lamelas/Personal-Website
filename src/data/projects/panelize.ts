@@ -19,16 +19,6 @@ export const panelize: Project = {
     "Full-stack architecture with React frontend and Flask backend",
     "User story management and saving capabilities"
   ],
-  challenges: [
-    "Implementing effective prompt engineering for coherent story generation",
-    "Integrating multiple AI technologies into a unified workflow",
-    "Creating a responsive and intuitive UI for comic creation",
-  ],
-  learnings: [
-    "Advanced prompt engineering techniques for GPT-4",
-    "AI image generation pipeline development",
-    "Full-stack application architecture with AI integration",
-  ],
   screenshots: [
     "/images/ae6f8004-21de-4032-b08a-7a41a1461a07.png",
     "/images/72874790-6a83-496f-b4f5-5ab9b56d252c.png"

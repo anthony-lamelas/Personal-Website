@@ -19,16 +19,6 @@ export const paddlerImprovementSystem: Project = {
     "AI-powered improvement recommendations using DeepSeek",
     "Integration with web platform for team-wide access"
   ],
-  challenges: [
-    "Building accurate classification models for subtle stroke differences",
-    "Developing comprehensive analysis of different stroke phases",
-    "Feature reduction and selection for optimal model performance",
-  ],
-  learnings: [
-    "Support Vector Machine implementation for movement classification",
-    "Data preprocessing and feature analysis from sports performance data",
-    "Sports biomechanics and paddling technique analysis"
-  ],
   screenshots: [
     "/images/f3f1cb86-5e5b-452e-9d8b-f2cb639af0a3.png",
     "/images/fdd0747b-5904-4e6d-b38b-cd3a6de0f4f3.png"
