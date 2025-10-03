@@ -128,9 +128,202 @@ const ProjectDetail = () => {
               </CardContent>
             </Card>
 
+            {/* Other Contributors - For Semantic Scaling */}
+            {project.id === "scaling-semantic-categories-vision-transformers" && (
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
+                    <Users className="text-blue-400 mr-3" size={28} />
+                    <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
+                  </div>
+                  <div className="text-center py-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <Users className="text-white" size={24} />
+                    </div>
+                    <h4 className="text-lg font-semibold text-white mb-2">Harrison Muchnic</h4>
+                    <a
+                      href="https://www.linkedin.com/in/harrisonmuchnic/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
+                    >
+                      <ExternalLink className="mr-2" size={16} />
+                      LinkedIn Profile
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Other Contributors - For FaceCrime */}
+            {project.id === "facecrime" && (
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
+                    <Users className="text-blue-400 mr-3" size={28} />
+                    <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="text-center py-4">
+                      <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <Users className="text-white" size={24} />
+                      </div>
+                      <h4 className="text-lg font-semibold text-white mb-2">Harrison Muchnic</h4>
+                      <a
+                        href="https://www.linkedin.com/in/harrisonmuchnic/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
+                      >
+                        <ExternalLink className="mr-2" size={16} />
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                    <div className="text-center py-4">
+                      <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <Users className="text-white" size={24} />
+                      </div>
+                      <h4 className="text-lg font-semibold text-white mb-2">Mike Odnis</h4>
+                      <a
+                        href="https://www.linkedin.com/in/mikeodnis/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-purple-600 transition-all duration-300 text-sm"
+                      >
+                        <ExternalLink className="mr-2" size={16} />
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Other Contributors - For FlightHub */}
+            {project.id === "flighthub" && (
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
+                    <Users className="text-blue-400 mr-3" size={28} />
+                    <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
+                  </div>
+                  <div className="text-center py-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-green-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <Users className="text-white" size={24} />
+                    </div>
+                    <h4 className="text-lg font-semibold text-white mb-2">Cindy Zhao</h4>
+                    <a
+                      href="https://www.linkedin.com/in/cindyzhao1127/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold rounded-lg hover:from-green-700 hover:to-green-600 transition-all duration-300 text-sm"
+                    >
+                      <ExternalLink className="mr-2" size={16} />
+                      LinkedIn Profile
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Other Contributors - For Window Warden */}
+            {project.id === "window-warden" && (
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
+                    <Users className="text-blue-400 mr-3" size={28} />
+                    <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="text-center py-4">
+                      <div className="w-16 h-16 bg-gradient-to-r from-red-600 to-red-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <Users className="text-white" size={24} />
+                      </div>
+                      <h4 className="text-lg font-semibold text-white mb-2">Rachel Hwang</h4>
+                      <a
+                        href="https://www.linkedin.com/in/rachelhwang21/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-600 to-red-500 text-white font-semibold rounded-lg hover:from-red-700 hover:to-red-600 transition-all duration-300 text-sm"
+                      >
+                        <ExternalLink className="mr-2" size={16} />
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                    <div className="text-center py-4">
+                      <div className="w-16 h-16 bg-gradient-to-r from-yellow-600 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <Users className="text-white" size={24} />
+                      </div>
+                      <h4 className="text-lg font-semibold text-white mb-2">Jin Jie Guo</h4>
+                      <a
+                        href="https://www.linkedin.com/in/jin-jie-guo-832241302/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-yellow-600 to-yellow-500 text-white font-semibold rounded-lg hover:from-yellow-700 hover:to-yellow-600 transition-all duration-300 text-sm"
+                      >
+                        <ExternalLink className="mr-2" size={16} />
+                        LinkedIn Profile
+                      </a>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Other Contributors - For Paddler Improvement System */}
+            {project.id === "paddler-improvement-system" && (
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
+                    <Users className="text-blue-400 mr-3" size={28} />
+                    <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
+                  </div>
+                  <div className="text-center py-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-orange-600 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <Users className="text-white" size={24} />
+                    </div>
+                    <h4 className="text-lg font-semibold text-white mb-2">Shubham Parab</h4>
+                    <a
+                      href="https://www.linkedin.com/in/skparab1/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-semibold rounded-lg hover:from-orange-700 hover:to-orange-600 transition-all duration-300 text-sm"
+                    >
+                      <ExternalLink className="mr-2" size={16} />
+                      LinkedIn Profile
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Test Files - For Paddler Improvement System */}
+            {project.testFiles && project.testFiles.length > 0 && (
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
+                    <FileText className="text-blue-400 mr-3" size={28} />
+                    <h2 className="text-3xl font-bold text-white">Test Files</h2>
+                  </div>
+                  <div className="text-center py-4">
+                    <FileText className="mx-auto text-gray-400 mb-3" size={40} />
+                    <p className="text-gray-300 mb-4 text-sm">Download the model test files</p>
+                    <a
+                      href={project.testFiles[0]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
+                    >
+                      <ExternalLink className="mr-2" size={16} />
+                      View Test Files
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            )}
           </div>
 
-          {/* Right Column - Screenshots, Research Paper, Contributors, or Test Files */}
+          {/* Right Column - Screenshots or Research Paper */}
           <div className="space-y-6">
             {/* Research Paper Section - for projects with arXiv links and no screenshots */}
             {isResearchPaper ? (
@@ -185,182 +378,6 @@ const ProjectDetail = () => {
                   </CardContent>
                 </Card>
               )
-            )}
-
-            {/* Other Contributors - For Semantic Scaling (scaling-semantic-categories-vision-transformers) */}
-            {project.id === "scaling-semantic-categories-vision-transformers" && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
-                  <div className="text-center py-4">
-                    <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Users className="text-white" size={24} />
-                    </div>
-                    <h4 className="text-lg font-semibold text-white mb-2">Harrison Muchnic</h4>
-                    <a
-                      href="https://www.linkedin.com/in/harrisonmuchnic/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
-                    >
-                      <ExternalLink className="mr-2" size={16} />
-                      LinkedIn Profile
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
-            )}
-
-            {/* Other Contributors - For FaceCrime (facecrime) */}
-            {project.id === "facecrime" && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
-                  <div className="space-y-4">
-                    <div className="text-center py-4">
-                      <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <Users className="text-white" size={24} />
-                      </div>
-                      <h4 className="text-lg font-semibold text-white mb-2">Harrison Muchnic</h4>
-                      <a
-                        href="https://www.linkedin.com/in/harrisonmuchnic/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
-                      >
-                        <ExternalLink className="mr-2" size={16} />
-                        LinkedIn Profile
-                      </a>
-                    </div>
-                    <div className="text-center py-4">
-                      <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <Users className="text-white" size={24} />
-                      </div>
-                      <h4 className="text-lg font-semibold text-white mb-2">Mike Odnis</h4>
-                      <a
-                        href="https://www.linkedin.com/in/mikeodnis/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-purple-500 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-purple-600 transition-all duration-300 text-sm"
-                      >
-                        <ExternalLink className="mr-2" size={16} />
-                        LinkedIn Profile
-                      </a>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            )}
-
-            {/* Other Contributors - For FlightHub (flighthub) */}
-            {project.id === "flighthub" && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
-                  <div className="text-center py-4">
-                    <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-green-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Users className="text-white" size={24} />
-                    </div>
-                    <h4 className="text-lg font-semibold text-white mb-2">Cindy Zhao</h4>
-                    <a
-                      href="https://www.linkedin.com/in/cindyzhao1127/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold rounded-lg hover:from-green-700 hover:to-green-600 transition-all duration-300 text-sm"
-                    >
-                      <ExternalLink className="mr-2" size={16} />
-                      LinkedIn Profile
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
-            )}
-
-            {/* Other Contributors - For Window Warden (window-warden) */}
-            {project.id === "window-warden" && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
-                  <div className="space-y-4">
-                    <div className="text-center py-4">
-                      <div className="w-16 h-16 bg-gradient-to-r from-red-600 to-red-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <Users className="text-white" size={24} />
-                      </div>
-                      <h4 className="text-lg font-semibold text-white mb-2">Rachel Hwang</h4>
-                      <a
-                        href="https://www.linkedin.com/in/rachelhwang21/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-600 to-red-500 text-white font-semibold rounded-lg hover:from-red-700 hover:to-red-600 transition-all duration-300 text-sm"
-                      >
-                        <ExternalLink className="mr-2" size={16} />
-                        LinkedIn Profile
-                      </a>
-                    </div>
-                    <div className="text-center py-4">
-                      <div className="w-16 h-16 bg-gradient-to-r from-yellow-600 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <Users className="text-white" size={24} />
-                      </div>
-                      <h4 className="text-lg font-semibold text-white mb-2">Jin Jie Guo</h4>
-                      <a
-                        href="https://www.linkedin.com/in/jin-jie-guo-832241302/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-yellow-600 to-yellow-500 text-white font-semibold rounded-lg hover:from-yellow-700 hover:to-yellow-600 transition-all duration-300 text-sm"
-                      >
-                        <ExternalLink className="mr-2" size={16} />
-                        LinkedIn Profile
-                      </a>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            )}
-
-            {/* Other Contributors - For Paddler Improvement System (paddler-improvement-system) */}
-            {project.id === "paddler-improvement-system" && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-4">Other Contributors</h3>
-                  <div className="text-center py-4">
-                    <div className="w-16 h-16 bg-gradient-to-r from-orange-600 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Users className="text-white" size={24} />
-                    </div>
-                    <h4 className="text-lg font-semibold text-white mb-2">Shubham Parab</h4>
-                    <a
-                      href="https://www.linkedin.com/in/skparab1/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-semibold rounded-lg hover:from-orange-700 hover:to-orange-600 transition-all duration-300 text-sm"
-                    >
-                      <ExternalLink className="mr-2" size={16} />
-                      LinkedIn Profile
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
-            )}
-
-            {/* Test Files Section - Only for Paddler Improvement System */}
-            {project.id === "paddler-improvement-system" && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-4">Test Files</h3>
-                  <div className="text-center py-4">
-                    <FileText className="mx-auto text-gray-400 mb-3" size={40} />
-                    <p className="text-gray-300 mb-4 text-sm">Access the test CSV files for paddling data analysis</p>
-                    <a
-                      href="https://drive.google.com/drive/folders/1lxRGp_EEGV2_sx-Jugw489s3O0H7-HhG?usp=sharing"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
-                    >
-                      <ExternalLink className="mr-2" size={16} />
-                      View Test Files
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
             )}
           </div>
         </div>
