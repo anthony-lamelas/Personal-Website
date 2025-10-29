@@ -8,10 +8,11 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 const Index = () => {
   const skills = [
     { name: "Python", icon: Code },
-    { name: "JavaScript", icon: Code },
-    { name: "TypeScript", icon: FileCode },
     { name: "SQL", icon: Database },
     { name: "C/C++", icon: Code },
+    { name: "Ruby", icon: Code },
+    { name: "JavaScript", icon: Code },
+    { name: "TypeScript", icon: FileCode },
     { name: "Git/GitHub", icon: GitBranch },
     { name: "LaTeX", icon: FileCode },
     { name: "Unix Command Line", icon: Terminal },

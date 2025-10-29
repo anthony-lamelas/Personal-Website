@@ -39,18 +39,16 @@ const About = () => {
                 <p>
                   Unlike many of my peers, when I first started at NYU I had almost no prior experience in computer science.
                   I was majoring in electrical and computer engineering at the time and had almost no idea what I wanted to do with my life.
-                  However, I quickly realized I need to learn how to code and I needed to learn quickly. 
+                  However, I quickly realized I needed to learn how to code and I needed to learn quickly. 
                 </p>
                 <p>
-                  After throwing myself into countless online courses and unfinished projects I eventually realized
-                  that the field of data science and machine learning was the one for me. The ability to directly apply
-                  the math/statistics I was learning in school combined with my quickly developing programming skills was
-                  very appealing. I also became fascinated with the impressive capabilities of machine learning models
-                  when given the right data.
+                  After throwing myself into countless online courses and unfinished projects I eventually develoded a strong interest in the 
+                  field of AI and machine learning. The ability to directly apply the math/statistics I was learning in school combined with my quickly 
+                  developing programming skills was very appealing. I also became fascinated with the impressive capabilities of LLMs and machine learning models
+                  when given the right data/promting. However, as of recent, I have also developed an interest in C++ development and I plan on 
+                  further exploring that field as well.
                 </p>
-                <p>
-                  In just a year and a half, I went from a curious beginner with no background in computer science to a confident developer who's landed multiple internships.
-                </p>
+
               </div>
             </CardContent>
           </Card>
@@ -66,7 +64,16 @@ const About = () => {
                 <div className="border-l-2 border-blue-400 pl-6 pb-6">
                   <h3 className="text-xl font-semibold text-white mb-2">Data Science Intern</h3>
                   <p className="text-blue-300 mb-2">Direct Supply | Summer 2025</p>
-                  <p className="text-gray-300 mb-3">Model development, visualizations, data pipelines, debugging, research, and more.</p>
+                  <ul className="text-gray-300 space-y-1">
+                    <li>• Built SQL-powered tools from large datasets in Python, categorized them into specialized GPT-4.1 agents using AutoGen,
+                          and used the agents to generate tailored sales talking points, reducing meeting prep time</li>
+                    <li> Delivered these agents through a RESTful API, integrated them into the frontend in React, and deployed to production on
+                         AWS ECS via GitLab CI/CD pipeline</li>
+                    <li>Achieved an 11% mean absolute percentage error on dispatch forecasting by training CatBoost and regression models using
+                        Scikit-learn in a Spark pipeline</li>
+                    <li>Increased service company readiness by writing a Python script leveraging AWS Lambda, SQS, and SES to send automated
+                        severe weather warnings</li>
+                    </ul>
 
                 </div>
                 

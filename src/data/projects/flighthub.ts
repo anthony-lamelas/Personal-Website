@@ -14,7 +14,6 @@ export const flightHub: Project = {
   features: [
     "User authentication system with separate customer and staff portals",
     "Comprehensive flight search with filtering capabilities",
-    "Booking management for customers with ticket confirmation",
     "Flight creation and management for airline staff",
     "Airport and airplane database management",
     "Customer reviews and ratings for flights",

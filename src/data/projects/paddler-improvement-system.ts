@@ -12,7 +12,6 @@ export const paddlerImprovementSystem: Project = {
   demo: "https://concretecanoe.skparab1.com/",
   role: "Machine Learning Developer",
   features: [
-    "Data collection system for paddler stroke information",
     "Machine learning classification of optimal vs. inoptimal strokes",
     "Detailed analysis of stroke phases (catch, pull, release)",
     "Performance metrics and visualization for individual paddlers",

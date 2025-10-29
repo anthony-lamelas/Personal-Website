@@ -4,17 +4,17 @@ import { Project } from "../../types/project";
 export const paddlePrompt: Project = {
   id: "paddleprompt",
   title: "PaddlePrompt",
-  shortDescription: "An LLM-based AI assistant specifically trained on Concrete Canoe competition proposals with RAG capabilities.",
-  description: "PaddlePrompt is a specialized AI assistant created by fine-tuning an OpenOrca Llama model on historical Concrete Canoe competition proposals. The system enhances proposal generation and technical documentation with domain-specific knowledge, leveraging a Pinecone vector database for Retrieval-Augmented Generation (RAG) to provide accurate and contextual responses for concrete canoe engineering.",
+  shortDescription: "An LLM-based chatbot using a RAG pipeline over dozens of Concrete Canoe competition proposals.",
+  description: "PaddlePrompt is an AI assistant that leverages GPT-4.1 with a Pinecone vector store to perform Retrieval-Augmented Generation (RAG) over historical Concrete Canoe competition proposals.",
   technologies: ["Python", "Flask", "Pinecone", "React", "TypeScript", "Docker"],
   image: "/images/88290740-5cf3-484e-a3db-912130ac6eea.png",
   github: "https://github.com/anthony-lamelas/PaddePrompt",
   demo: "https://paddleprompt.onrender.com/",
-  role: "Lead Developer",    
+  role: "Lead Developer",
   features: [
-    "Custom fine-tuning of OpenOrca Llama model on competition-specific data",
-    "Pinecone vector database for efficient RAG implementation",
-    "Enhanced understanding of concrete canoe engineering terminology",
+    "Retrieval-Augmented Generation (RAG) using Pinecone for vector search",
+    "No model fine-tuning — uses retrieved context with a pre-trained LLM",
+    "Domain-specific retrieval across historical Concrete Canoe proposals for accurate responses",
   ],
   screenshots: []
 };
