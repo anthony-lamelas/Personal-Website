@@ -15,7 +15,6 @@ const Index = () => {
     { name: "TypeScript", icon: FileCode },
     { name: "Git/GitHub", icon: GitBranch },
     { name: "LaTeX", icon: FileCode },
-    { name: "Unix Command Line", icon: Terminal },
   ];
 
   const coursework = [
