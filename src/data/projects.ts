@@ -8,7 +8,6 @@ import { scalingSemanticCategories } from "./projects/scaling-semantic-categorie
 import { panelize } from "./projects/panelize";
 import { paddlePrompt } from "./projects/paddleprompt";
 import { e20AssemblySimulator } from "./projects/e20-assembly-simulator";
-import { wouldYouRather } from "./projects/would-you-rather";
 
 export type { Project } from "../types/project";
 
@@ -21,5 +20,4 @@ export const projects: Project[] = [
   panelize,
   paddlePrompt,
   e20AssemblySimulator,
-  wouldYouRather,
 ];

@@ -63,15 +63,15 @@ const About = () => {
               <div className="space-y-6">
                 <div className="border-l-2 border-blue-400 pl-6 pb-6">
                   <h3 className="text-xl font-semibold text-white mb-2">Data Science Intern</h3>
-                  <p className="text-blue-300 mb-2">Direct Supply | Summer 2025</p>
+                  <p className="text-blue-300 mb-2">Direct Supply | May 2025 - December 2025</p>
                   <ul className="text-gray-300 space-y-1">
                     <li>• Built SQL-powered tools from large datasets in Python, categorized them into specialized GPT-4.1 agents using AutoGen,
                           and used the agents to generate tailored sales talking points, reducing meeting prep time</li>
-                    <li> Delivered these agents through a RESTful API, integrated them into the frontend in React, and deployed to production on
+                    <li>• Delivered these agents through a RESTful API, integrated them into the frontend in React, and deployed to production on
                          AWS ECS via GitLab CI/CD pipeline</li>
-                    <li>Achieved an 11% mean absolute percentage error on dispatch forecasting by training CatBoost and regression models using
+                    <li>• Achieved an 11% mean absolute percentage error on dispatch forecasting by training CatBoost and regression models using
                         Scikit-learn in a Spark pipeline</li>
-                    <li>Increased service company readiness by writing a Python script leveraging AWS Lambda, SQS, and SES to send automated
+                    <li>• Increased service company readiness by writing a Python script leveraging AWS Lambda, SQS, and SES to send automated
                         severe weather warnings</li>
                     </ul>
 
@@ -79,7 +79,7 @@ const About = () => {
                 
                 <div className="border-l-2 border-blue-400 pl-6 pb-6">
                   <h3 className="text-xl font-semibold text-white mb-2">Research Intern</h3>
-                  <p className="text-blue-300 mb-2">Pomu (Fashion Manufacturer Recommendation) | April 2024 - Present</p>
+                  <p className="text-blue-300 mb-2">Pomu (Fashion Manufacturer Recommendation) | April 2024 - May 2025</p>
                   <p className="text-gray-300 mb-3">Conducted research on improving vision transformer accuracy.</p>
                   <ul className="text-gray-300 space-y-1">
                     <li>• Utilized a CLIP-based image classification tool via UNIX command line to process over 500,000 images</li>
