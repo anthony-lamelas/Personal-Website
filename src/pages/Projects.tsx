@@ -1,25 +1,42 @@
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
-import { ExternalLink, Github, Code, Search, X, Filter } from "lucide-react";
+import { ExternalLink, Github, Code, Search, X } from "lucide-react";
 import { projects } from "@/data/projects";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 
+const PROGRAMMING_LANGUAGES = [
+  "Python",
+  "JavaScript",
+  "TypeScript",
+  "Java",
+  "C++",
+  "C",
+  "HTML/CSS",
+  "SQL",
+  "Swift",
+  "R",
+];
+
 const Projects = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedTechs, setSelectedTechs] = useState<string[]>([]);
+  const [selectedLanguages, setSelectedLanguages] = useState<string[]>([]);
 
-  // Get all unique technologies
-  const allTechnologies = useMemo(() => {
-    const techSet = new Set<string>();
+  // Get available languages that exist in projects
+  const availableLanguages = useMemo(() => {
+    const langSet = new Set<string>();
     projects.forEach((project) => {
-      project.technologies.forEach((tech) => techSet.add(tech));
+      project.technologies.forEach((tech) => {
+        if (PROGRAMMING_LANGUAGES.includes(tech)) {
+          langSet.add(tech);
+        }
+      });
     });
-    return Array.from(techSet).sort();
+    return PROGRAMMING_LANGUAGES.filter((lang) => langSet.has(lang));
   }, []);
 
-  // Filter projects based on search and selected technologies
+  // Filter projects based on search and selected languages
   const filteredProjects = useMemo(() => {
     return projects.filter((project) => {
       const matchesSearch =
@@ -27,28 +44,28 @@ const Projects = () => {
         project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         project.shortDescription.toLowerCase().includes(searchQuery.toLowerCase());
 
-      const matchesTech =
-        selectedTechs.length === 0 ||
-        selectedTechs.some((tech) => project.technologies.includes(tech));
+      const matchesLanguage =
+        selectedLanguages.length === 0 ||
+        selectedLanguages.some((lang) => project.technologies.includes(lang));
 
-      return matchesSearch && matchesTech;
+      return matchesSearch && matchesLanguage;
     });
-  }, [searchQuery, selectedTechs]);
+  }, [searchQuery, selectedLanguages]);
 
-  const toggleTech = (tech: string) => {
-    setSelectedTechs((prev) =>
-      prev.includes(tech)
-        ? prev.filter((t) => t !== tech)
-        : [...prev, tech]
+  const toggleLanguage = (lang: string) => {
+    setSelectedLanguages((prev) =>
+      prev.includes(lang)
+        ? prev.filter((l) => l !== lang)
+        : [...prev, lang]
     );
   };
 
   const clearFilters = () => {
     setSearchQuery("");
-    setSelectedTechs([]);
+    setSelectedLanguages([]);
   };
 
-  const hasActiveFilters = searchQuery !== "" || selectedTechs.length > 0;
+  const hasActiveFilters = searchQuery !== "" || selectedLanguages.length > 0;
 
   return (
     <div className="pt-16 min-h-screen">
@@ -88,24 +105,21 @@ const Projects = () => {
             )}
           </div>
 
-          {/* Technology Filters */}
+          {/* Language Filters */}
           <div className="flex flex-wrap items-center gap-2">
-            <div className="flex items-center gap-2 text-gray-400 mr-2">
-              <Filter size={16} />
-              <span className="text-sm font-medium">Filter by tech:</span>
-            </div>
-            {allTechnologies.map((tech) => (
+            <span className="text-sm font-medium text-gray-400 mr-2">Language:</span>
+            {availableLanguages.map((lang) => (
               <Badge
-                key={tech}
-                variant={selectedTechs.includes(tech) ? "default" : "outline"}
+                key={lang}
+                variant={selectedLanguages.includes(lang) ? "default" : "outline"}
                 className={`cursor-pointer transition-all duration-200 ${
-                  selectedTechs.includes(tech)
+                  selectedLanguages.includes(lang)
                     ? "bg-blue-600 hover:bg-blue-700 text-white border-blue-600"
                     : "bg-white/5 hover:bg-white/10 text-gray-300 border-white/20 hover:border-white/40"
                 }`}
-                onClick={() => toggleTech(tech)}
+                onClick={() => toggleLanguage(lang)}
               >
-                {tech}
+                {lang}
               </Badge>
             ))}
           </div>
