@@ -62,7 +62,7 @@ const About = () => {
               </div>
               <div className="space-y-6">
                 <div className="border-l-2 border-blue-400 pl-6 pb-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">Data Science Intern</h3>
+                  <h3 className="text-xl font-semibold text-white mb-2">Data Science and Applied AI Intern</h3>
                   <p className="text-blue-300 mb-2">Direct Supply | May 2025 - December 2025</p>
                   <ul className="text-gray-300 space-y-1">
                     <li>• Built SQL-powered tools from large datasets in Python, categorized them into specialized GPT-4.1 agents using AutoGen,

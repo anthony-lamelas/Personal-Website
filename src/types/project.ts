@@ -1,4 +1,9 @@
 
+export interface Contributor {
+  name: string;
+  linkedin?: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -12,4 +17,5 @@ export interface Project {
   features: string[];
   screenshots: string[];
   testFiles?: string[];
+  contributors?: string[] | Contributor[];
 }
