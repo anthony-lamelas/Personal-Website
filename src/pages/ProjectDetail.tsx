@@ -71,7 +71,7 @@ const ProjectDetail = () => {
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300"
               >
                 <ExternalLink className="mr-2" size={20} />
-                {project.demo.includes("arxiv.org") ? "View Paper" : "Live Demo"}
+                {project.demo.includes("arxiv.org") || project.demo.includes("drive.google.com") ? "View Paper" : "Live Demo"}
               </a>
             )}
           </div>

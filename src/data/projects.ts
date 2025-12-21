@@ -10,7 +10,7 @@ import { paddlePrompt } from "./projects/paddleprompt";
 import { e20AssemblySimulator } from "./projects/e20-assembly-simulator";
 import { p1 } from "./projects/thryft";
 import { p2 } from "./projects/stroke_prediction";
-import { p3 } from "./projects/p3";
+import { p3 } from "./projects/slm";
 
 export type { Project } from "../types/project";
 
