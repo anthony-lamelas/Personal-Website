@@ -13,10 +13,9 @@ const PROGRAMMING_LANGUAGES = [
   "Java",
   "C++",
   "C",
+  "Ruby",
   "HTML/CSS",
   "SQL",
-  "Swift",
-  "R",
 ];
 
 const Projects = () => {
@@ -39,10 +38,12 @@ const Projects = () => {
   // Filter projects based on search and selected languages
   const filteredProjects = useMemo(() => {
     return projects.filter((project) => {
+      const searchLower = searchQuery.toLowerCase();
       const matchesSearch =
         searchQuery === "" ||
-        project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        project.shortDescription.toLowerCase().includes(searchQuery.toLowerCase());
+        project.title.toLowerCase().includes(searchLower) ||
+        project.shortDescription.toLowerCase().includes(searchLower) ||
+        project.technologies.some((tech) => tech.toLowerCase().includes(searchLower));
 
       const matchesLanguage =
         selectedLanguages.length === 0 ||
