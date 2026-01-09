@@ -25,13 +25,14 @@ const Index = () => {
     { name: "Intro to Databases", code: "CS-UY 3083" },
     { name: "Linear Algebra", code: "MA-UY 1044" },
     { name: "Computer Architecture & Organization", code: "CS-UY 2214" },
-    { name: "Calculus I-II", code: "MA-UY 1324, 1124, 2114" },
+    { name: "Calculus I-III", code: "MA-UY 1324, 1124, 2114" },
     { name: "Probability & Statistics", code: "MA-UY 2224" },
     { name: "Machine Learning", code: "CS-UY 4563" },
     { name: "Operating Systems", code: "CS-UY 3224" },
     { name: "Software Engineering", code: "CS-UY 4513" },
     { name: "Natural Language Processing", code: "CSCI-UA 469" },
     { name: "Computer Security", code: "CS-UY 3923" },
+    { name: "Deep Learning", code: "CS-GY 6953" },
   ];
 
   return (

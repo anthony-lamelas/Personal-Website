@@ -62,6 +62,15 @@ const About = () => {
               </div>
               <div className="space-y-6">
                 <div className="border-l-2 border-blue-400 pl-6 pb-6">
+                  <h3 className="text-xl font-semibold text-white mb-2">Incoming Software Engineering Intern</h3>
+                  <p className="text-blue-300 mb-2">Google | May 2026 - August 2026</p>
+                  <ul className="text-gray-300 space-y-1">
+                    <li>• Incoming for Summer 2026</li>
+                    <li>• AI agents specializing in writing code for Google Cloud applications</li>
+                  </ul>
+                </div>
+                
+                <div className="border-l-2 border-blue-400 pl-6 pb-6">
                   <h3 className="text-xl font-semibold text-white mb-2">Data Science and Applied AI Intern</h3>
                   <p className="text-blue-300 mb-2">Direct Supply | May 2025 - December 2025</p>
                   <ul className="text-gray-300 space-y-1">
