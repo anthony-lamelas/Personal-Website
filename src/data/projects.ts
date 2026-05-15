@@ -19,10 +19,11 @@ import { p3 } from "./projects/slm";
 export type { Project } from "../types/project";
 
 export const projects: Project[] = [
+  rlHls,
+  onTime,
+  paddlePrompt,
   scienceQa,
   svgGeneration,
-  onTime,
-  rlHls,
   p1,
   p2,
   p3,
@@ -32,6 +33,5 @@ export const projects: Project[] = [
   faceCrime,
   scalingSemanticCategories,
   panelize,
-  paddlePrompt,
   e20AssemblySimulator,
 ];
