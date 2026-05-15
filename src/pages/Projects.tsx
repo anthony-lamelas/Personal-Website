@@ -135,7 +135,7 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className={`w-full h-full transition-transform duration-300 hover:scale-110 ${project.id === 'rl-hls' || project.image.includes('hls.png') ? 'object-contain bg-white' : 'object-cover'}`}
+                    className={`w-full h-full transition-transform duration-300 hover:scale-110 ${project.id === 'rl-hls' || project.image.includes('hls.png') ? 'object-contain bg-white' : project.id === 'svg-generation' ? 'object-contain' : 'object-cover'}`}
                   />
                 </div>
                 <CardContent className="p-6">

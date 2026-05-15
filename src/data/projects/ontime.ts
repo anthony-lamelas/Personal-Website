@@ -14,7 +14,7 @@ export const onTime: Project = {
     "Real-time subway tracking maps app with route recommendations based on live delay predictions",
     "Microservices architecture deployed on AWS with a FastAPI backend and React/Mapbox frontend",
     "Independent machine learning microservice for live transit data ingestion",
-    "Delay prediction model using LightGBM and scikit-learn with continuous retraining pipeline"
+    "Delay prediction model using LightGBM and scikit-learn with a continuous retraining pipeline"
   ],
   contributors: [
     {

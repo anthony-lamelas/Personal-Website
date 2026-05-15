@@ -3,6 +3,7 @@ import { Project } from "../types/project";
 import { paddlerImprovementSystem } from "./projects/paddler-improvement-system";
 import { rlHls } from "./projects/rl-hls";
 import { onTime } from "./projects/ontime";
+import { svgGeneration } from "./projects/svg-generation";
 import { windowWarden } from "./projects/window-warden";
 import { flightHub } from "./projects/flighthub";
 import { faceCrime } from "./projects/facecrime";
@@ -17,6 +18,7 @@ import { p3 } from "./projects/slm";
 export type { Project } from "../types/project";
 
 export const projects: Project[] = [
+  svgGeneration,
   onTime,
   rlHls,
   p1,
