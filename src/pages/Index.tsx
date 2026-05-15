@@ -11,10 +11,10 @@ const Index = () => {
     { name: "SQL", icon: Database },
     { name: "C/C++", icon: Code },
     { name: "Ruby", icon: Code },
-    { name: "JavaScript", icon: Code },
+    { name: "React", icon: Code },
     { name: "TypeScript", icon: FileCode },
     { name: "Git/GitHub", icon: GitBranch },
-    { name: "LaTeX", icon: FileCode },
+    { name: "AWS", icon: FileCode },
   ];
 
   const coursework = [

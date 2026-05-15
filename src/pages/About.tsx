@@ -71,6 +71,15 @@ const About = () => {
                 </div>
                 
                 <div className="border-l-2 border-blue-400 pl-6 pb-6">
+                  <h3 className="text-xl font-semibold text-white mb-2">Undergraduate AI Researcher</h3>
+                  <p className="text-blue-300 mb-2">New York University (Ensure Research Group) | January 2026 - Present</p>
+                  <ul className="text-gray-300 space-y-1">
+                    <li>• Building an LLM-driven FPGA/ASIC design space exploration system in Python where models generate high-level synthesis (HLS) directives, evaluated using Vitis HLS</li>
+                    <li>• Fine-tuning a Qwen-7B model using GRPO reinforcement learning to learn hardware optimization strategies</li>
+                  </ul>
+                </div>
+
+                <div className="border-l-2 border-blue-400 pl-6 pb-6">
                   <h3 className="text-xl font-semibold text-white mb-2">Data Science and Applied AI Intern</h3>
                   <p className="text-blue-300 mb-2">Direct Supply | May 2025 - December 2025</p>
                   <ul className="text-gray-300 space-y-1">
@@ -160,10 +169,19 @@ const About = () => {
               <div className="space-y-6">
                 <div className="border-l-2 border-blue-400 pl-6 pb-6">
                   <h3 className="text-xl font-semibold text-white mb-2">Walmart Sophomore Summit (Software Engineering Track)</h3>
-                  <p className="text-blue-300 mb-2">Walmart Global Tech | Apr 2025</p>
-                  <p className="text-gray-300 mb-3">Selected as one of 100 participants from 3,000+ applicants for the Walmart Sophomore Summit – SWE Track.</p>
+                  <p className="text-blue-300 mb-2">Walmart Global Tech | April 2025</p>
+                  <p className="text-gray-300 mb-3">• Selected as one of 100 participants from 3,000+ applicants for the Walmart Sophomore Summit – SWE Track.</p>
                   <ul className="text-gray-300 space-y-1">
                     <li>• Engaged in hands-on workshops, networking, and technical sessions with Walmart Global Tech engineers</li>
+                  </ul>
+                </div>
+
+                <div className="border-l-2 border-blue-400 pl-6 pb-6">
+                  <h3 className="text-xl font-semibold text-white mb-2">Kohl's Emerging Talent Summit</h3>
+                  <p className="text-blue-300 mb-2">Kohl's | April 2025</p>
+                  <p className="text-gray-300 mb-3">• Selected as one of 200 participants for the Kohl's Emerging Talent Summit.</p>
+                  <ul className="text-gray-300 space-y-1">
+                    <li>• Engaged in workshops, networking, and interviews with other students and members of the Kohl's team</li>
                   </ul>
                 </div>
               </div>
