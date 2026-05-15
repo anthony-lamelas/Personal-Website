@@ -124,11 +124,6 @@ const Projects = () => {
               </Badge>
             ))}
           </div>
-
-          {/* Results count */}
-          <div className="text-sm text-gray-400">
-            Showing {filteredProjects.length} of {projects.length} projects
-          </div>
         </div>
 
         {/* Projects Grid */}
