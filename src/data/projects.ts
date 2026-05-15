@@ -1,6 +1,7 @@
 
 import { Project } from "../types/project";
 import { paddlerImprovementSystem } from "./projects/paddler-improvement-system";
+import { rlHls } from "./projects/rl-hls";
 import { windowWarden } from "./projects/window-warden";
 import { flightHub } from "./projects/flighthub";
 import { faceCrime } from "./projects/facecrime";
@@ -15,6 +16,7 @@ import { p3 } from "./projects/slm";
 export type { Project } from "../types/project";
 
 export const projects: Project[] = [
+  rlHls,
   p1,
   p2,
   p3,

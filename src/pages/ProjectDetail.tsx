@@ -136,7 +136,7 @@ const ProjectDetail = () => {
                     <Users className="text-blue-400 mr-3" size={28} />
                     <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className={`grid grid-cols-1 gap-6 ${project.contributors.length === 1 ? "" : "md:grid-cols-2 lg:grid-cols-3"}`}>
                     {project.contributors.map((contributor, index) => {
                       const contributorName = typeof contributor === 'string' ? contributor : contributor.name;
                       const contributorLinkedIn = typeof contributor === 'object' ? contributor.linkedin : undefined;
@@ -397,7 +397,7 @@ const ProjectDetail = () => {
                               <img
                                 src={screenshot}
                                 alt={`${project.title} screenshot ${index + 1}`}
-                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                                className={`w-full h-full hover:scale-105 transition-transform duration-300 ${project.id === 'rl-hls' ? 'object-contain bg-white p-2' : 'object-cover'}`}
                               />
                             </div>
                           </DialogTrigger>
