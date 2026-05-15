@@ -10,3 +10,18 @@ Link: https://anthony-lamelas.onrender.com/
 npm install
 npm run dev
 ```
+
+## Testing
+
+To ensure the application's components render correctly and catch any type or syntax errors, you can run the test suite locally.
+
+```bash
+# Run unit and component tests (Vitest)
+npm run test
+
+# Run static type checking (TypeScript)
+npm run typecheck
+
+# Run code linting (ESLint)
+npm run lint
+```
