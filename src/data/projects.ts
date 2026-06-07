@@ -15,6 +15,8 @@ import { e20AssemblySimulator } from "./projects/e20-assembly-simulator";
 import { p1 } from "./projects/thryft";
 import { p2 } from "./projects/stroke_prediction";
 import { p3 } from "./projects/slm";
+import { multithreadedImageProcessor } from "./projects/multithreaded-image-processor";
+import { dupfinder } from "./projects/dupfinder";
 
 export type { Project } from "../types/project";
 
@@ -34,4 +36,6 @@ export const projects: Project[] = [
   scalingSemanticCategories,
   panelize,
   e20AssemblySimulator,
+  multithreadedImageProcessor,
+  dupfinder,
 ];
