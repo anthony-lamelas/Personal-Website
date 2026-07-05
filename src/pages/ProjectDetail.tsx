@@ -20,7 +20,7 @@ const ProjectDetail = () => {
           <p className="text-gray-300 mb-6">The project you're looking for doesn't exist.</p>
           <Link
             to="/projects"
-            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300"
+            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-sky-500 to-cyan-400 text-white font-semibold rounded-lg hover:from-sky-400 hover:to-cyan-300 transition-all duration-300"
           >
             <ArrowLeft className="mr-2" size={20} />
             Back to Projects
@@ -39,7 +39,7 @@ const ProjectDetail = () => {
         {/* Back Button */}
         <Link
           to="/projects"
-          className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors mb-8"
+          className="inline-flex items-center text-sky-400 hover:text-sky-300 transition-colors mb-8"
         >
           <ArrowLeft className="mr-2" size={20} />
           Back to Projects
@@ -68,7 +68,7 @@ const ProjectDetail = () => {
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-sky-500 to-cyan-400 text-white font-semibold rounded-lg hover:from-sky-400 hover:to-cyan-300 transition-all duration-300"
               >
                 <ExternalLink className="mr-2" size={20} />
                 {project.demo.includes("arxiv.org") || project.demo.includes("drive.google.com") ? "View Paper" : "Live Demo"}
@@ -82,10 +82,10 @@ const ProjectDetail = () => {
           {/* Left Column - Main Info */}
           <div className="lg:col-span-2 space-y-8">
             {/* Project Overview */}
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+            <Card className="glass-card border-white/10 bg-white/[0.04]">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <Code className="text-blue-400 mr-3" size={28} />
+                  <Code className="text-sky-400 mr-3" size={28} />
                   <h2 className="text-3xl font-bold text-white">Project Overview</h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -99,7 +99,7 @@ const ProjectDetail = () => {
                       {project.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm"
+                          className="px-3 py-1 bg-sky-500/10 text-sky-300 rounded-full font-mono text-xs"
                         >
                           {tech}
                         </span>
@@ -111,10 +111,10 @@ const ProjectDetail = () => {
             </Card>
 
             {/* Features */}
-            <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+            <Card className="glass-card border-white/10 bg-white/[0.04]">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <CheckCircle className="text-blue-400 mr-3" size={28} />
+                  <CheckCircle className="text-sky-400 mr-3" size={28} />
                   <h2 className="text-3xl font-bold text-white">Key Features</h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -130,10 +130,10 @@ const ProjectDetail = () => {
 
             {/* Other Contributors - Dynamic Section */}
             {project.contributors && project.contributors.length > 0 && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+              <Card className="glass-card border-white/10 bg-white/[0.04]">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <Users className="text-blue-400 mr-3" size={28} />
+                    <Users className="text-sky-400 mr-3" size={28} />
                     <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
                   </div>
                   <div className={`grid grid-cols-1 gap-6 ${project.contributors.length === 1 ? "" : "md:grid-cols-2 lg:grid-cols-3"}`}>
@@ -143,7 +143,7 @@ const ProjectDetail = () => {
                       
                       return (
                         <div key={index} className="text-center py-4">
-                          <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                          <div className="w-16 h-16 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-3">
                             <Users className="text-white" size={24} />
                           </div>
                           <h4 className="text-lg font-semibold text-white mb-2">{contributorName}</h4>
@@ -152,7 +152,7 @@ const ProjectDetail = () => {
                               href={contributorLinkedIn}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
+                              className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white font-semibold rounded-lg hover:from-sky-400 hover:to-cyan-300 transition-all duration-300 text-sm"
                             >
                               <ExternalLink className="mr-2" size={16} />
                               LinkedIn Profile
@@ -168,14 +168,14 @@ const ProjectDetail = () => {
 
             {/* Other Contributors - For Semantic Scaling */}
             {project.id === "scaling-semantic-categories-vision-transformers" && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+              <Card className="glass-card border-white/10 bg-white/[0.04]">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <Users className="text-blue-400 mr-3" size={28} />
+                    <Users className="text-sky-400 mr-3" size={28} />
                     <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
                   </div>
                   <div className="text-center py-4">
-                    <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <div className="w-16 h-16 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-3">
                       <Users className="text-white" size={24} />
                     </div>
                     <h4 className="text-lg font-semibold text-white mb-2">Harrison Muchnic</h4>
@@ -183,7 +183,7 @@ const ProjectDetail = () => {
                       href="https://www.linkedin.com/in/harrisonmuchnic/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
+                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white font-semibold rounded-lg hover:from-sky-400 hover:to-cyan-300 transition-all duration-300 text-sm"
                     >
                       <ExternalLink className="mr-2" size={16} />
                       LinkedIn Profile
@@ -195,15 +195,15 @@ const ProjectDetail = () => {
 
             {/* Other Contributors - For FaceCrime */}
             {project.id === "facecrime" && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+              <Card className="glass-card border-white/10 bg-white/[0.04]">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <Users className="text-blue-400 mr-3" size={28} />
+                    <Users className="text-sky-400 mr-3" size={28} />
                     <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="text-center py-4">
-                      <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <div className="w-16 h-16 bg-gradient-to-r from-sky-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-3">
                         <Users className="text-white" size={24} />
                       </div>
                       <h4 className="text-lg font-semibold text-white mb-2">Harrison Muchnic</h4>
@@ -211,7 +211,7 @@ const ProjectDetail = () => {
                         href="https://www.linkedin.com/in/harrisonmuchnic/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
+                        className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white font-semibold rounded-lg hover:from-sky-400 hover:to-cyan-300 transition-all duration-300 text-sm"
                       >
                         <ExternalLink className="mr-2" size={16} />
                         LinkedIn Profile
@@ -239,10 +239,10 @@ const ProjectDetail = () => {
 
             {/* Other Contributors - For FlightHub */}
             {project.id === "flighthub" && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+              <Card className="glass-card border-white/10 bg-white/[0.04]">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <Users className="text-blue-400 mr-3" size={28} />
+                    <Users className="text-sky-400 mr-3" size={28} />
                     <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
                   </div>
                   <div className="text-center py-4">
@@ -266,10 +266,10 @@ const ProjectDetail = () => {
 
             {/* Other Contributors - For Window Warden */}
             {project.id === "window-warden" && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+              <Card className="glass-card border-white/10 bg-white/[0.04]">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <Users className="text-blue-400 mr-3" size={28} />
+                    <Users className="text-sky-400 mr-3" size={28} />
                     <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -310,10 +310,10 @@ const ProjectDetail = () => {
 
             {/* Other Contributors - For Paddler Improvement System */}
             {project.id === "paddler-improvement-system" && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+              <Card className="glass-card border-white/10 bg-white/[0.04]">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <Users className="text-blue-400 mr-3" size={28} />
+                    <Users className="text-sky-400 mr-3" size={28} />
                     <h2 className="text-3xl font-bold text-white">Other Contributors</h2>
                   </div>
                   <div className="text-center py-4">
@@ -337,10 +337,10 @@ const ProjectDetail = () => {
 
             {/* Test Files - For Paddler Improvement System */}
             {project.testFiles && project.testFiles.length > 0 && (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+              <Card className="glass-card border-white/10 bg-white/[0.04]">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <FileText className="text-blue-400 mr-3" size={28} />
+                    <FileText className="text-sky-400 mr-3" size={28} />
                     <h2 className="text-3xl font-bold text-white">Test Files</h2>
                   </div>
                   <div className="text-center py-4">
@@ -350,7 +350,7 @@ const ProjectDetail = () => {
                       href={project.testFiles[0]}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
+                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white font-semibold rounded-lg hover:from-sky-400 hover:to-cyan-300 transition-all duration-300 text-sm"
                     >
                       <ExternalLink className="mr-2" size={16} />
                       View Test Files
@@ -365,7 +365,7 @@ const ProjectDetail = () => {
           <div className="space-y-6">
             {/* Research Paper Section - for projects with arXiv links and no screenshots */}
             {isResearchPaper ? (
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+              <Card className="glass-card border-white/10 bg-white/[0.04]">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-white mb-4">Research Paper</h3>
                   <div className="text-center py-4">
@@ -375,7 +375,7 @@ const ProjectDetail = () => {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 text-sm"
+                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-sky-500 to-cyan-400 text-white font-semibold rounded-lg hover:from-sky-400 hover:to-cyan-300 transition-all duration-300 text-sm"
                     >
                       <ExternalLink className="mr-2" size={16} />
                       View Paper
@@ -386,7 +386,7 @@ const ProjectDetail = () => {
             ) : (
               /* Screenshots Section - for projects with screenshots */
               project.screenshots.length > 0 && (
-                <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+                <Card className="glass-card border-white/10 bg-white/[0.04]">
                   <CardContent className="p-6">
                     <h3 className="text-xl font-bold text-white mb-4">Project Screenshots</h3>
                     <div className="space-y-4">
@@ -425,7 +425,7 @@ const ProjectDetail = () => {
           <h3 className="text-2xl font-bold text-white mb-6">Explore More Projects</h3>
           <Link
             to="/projects"
-            className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300"
+            className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-sky-500 to-cyan-400 text-white font-semibold rounded-lg hover:from-sky-400 hover:to-cyan-300 transition-all duration-300"
           >
             View All Projects
             <ArrowLeft className="ml-2 rotate-180" size={20} />

@@ -11,6 +11,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
 import Navigation from "./components/Navigation";
 import Contact from "./pages/Contact";
+import AnimatedBackground from "./components/AnimatedBackground";
 
 const queryClient = new QueryClient();
 
@@ -20,7 +21,8 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+        <div className="relative min-h-screen">
+          <AnimatedBackground />
           <Navigation />
           <Routes>
             <Route path="/" element={<Index />} />

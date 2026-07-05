@@ -5,6 +5,7 @@ import { ExternalLink, Github, Code, Search, X } from "lucide-react";
 import { projects } from "@/data/projects";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
+import Reveal from "@/components/Reveal";
 
 const PROGRAMMING_LANGUAGES = [
   "Python",
@@ -69,36 +70,42 @@ const Projects = () => {
   const hasActiveFilters = searchQuery !== "" || selectedLanguages.length > 0;
 
   return (
-    <div className="pt-16 min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 py-20">
+    <div className="min-h-screen pt-16">
+      <div className="mx-auto max-w-7xl px-4 py-20">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-white mb-6">My Projects</h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            A collection of projects that showcase my skills in web development, 
-            AI/ML, and more. Each project represents a unique challenge 
-            and learning opportunity.
+        <Reveal className="mb-12 text-center">
+          <p className="eyebrow mb-3">Selected work</p>
+          <h1 className="mb-6 font-display text-5xl font-bold text-white">
+            My Projects
+          </h1>
+          <p className="mx-auto max-w-3xl text-xl text-gray-300">
+            A collection of projects that showcase my skills in web development,
+            AI/ML, and more. Each project represents a unique challenge and
+            learning opportunity.
           </p>
-        </div>
+        </Reveal>
 
         {/* Filter Bar */}
-        <div className="mb-10 space-y-4">
+        <Reveal className="mb-10 space-y-4">
           {/* Search and Clear */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col gap-4 sm:flex-row">
             <div className="relative flex-1">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
+              <Search
+                className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+                size={20}
+              />
               <Input
                 type="text"
                 placeholder="Search projects..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500/20"
+                className="border-white/10 bg-white/[0.04] pl-10 text-white placeholder:text-gray-400 focus:border-sky-500 focus:ring-sky-500/20"
               />
             </div>
             {hasActiveFilters && (
               <button
                 onClick={clearFilters}
-                className="flex items-center gap-2 px-4 py-2 text-gray-300 hover:text-white bg-white/10 hover:bg-white/15 rounded-lg transition-all duration-200"
+                className="flex items-center gap-2 rounded-lg bg-white/[0.06] px-4 py-2 text-gray-300 transition-all duration-200 hover:bg-white/10 hover:text-white"
               >
                 <X size={16} />
                 Clear filters
@@ -108,15 +115,17 @@ const Projects = () => {
 
           {/* Language Filters */}
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-sm font-medium text-gray-400 mr-2">Language:</span>
+            <span className="mr-2 font-mono text-xs uppercase tracking-wider text-gray-400">
+              Language:
+            </span>
             {availableLanguages.map((lang) => (
               <Badge
                 key={lang}
                 variant={selectedLanguages.includes(lang) ? "default" : "outline"}
                 className={`cursor-pointer transition-all duration-200 ${
                   selectedLanguages.includes(lang)
-                    ? "bg-blue-600 hover:bg-blue-700 text-white border-blue-600"
-                    : "bg-white/5 hover:bg-white/10 text-gray-300 border-white/20 hover:border-white/40"
+                    ? "border-sky-500 bg-sky-500 text-slate-950 hover:bg-sky-400"
+                    : "border-white/15 bg-white/[0.04] text-gray-300 hover:border-sky-400/40 hover:bg-white/10"
                 }`}
                 onClick={() => toggleLanguage(lang)}
               >
@@ -124,83 +133,101 @@ const Projects = () => {
               </Badge>
             ))}
           </div>
-        </div>
+        </Reveal>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {filteredProjects.length > 0 ? (
-            filteredProjects.map((project) => (
-              <Card key={project.id} className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 overflow-hidden">
-                <div className="aspect-video overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className={`w-full h-full transition-transform duration-300 hover:scale-110 ${project.id === 'rl-hls' || project.image.includes('hls.png') ? 'object-contain bg-white' : project.id === 'svg-generation' || project.id === 'science-qa' ? 'object-contain' : 'object-cover'}`}
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
-                  <p className="text-gray-300 mb-4 line-clamp-3">{project.shortDescription}</p>
-                  
-                  {/* Technologies */}
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.slice(0, 3).map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 bg-blue-600/20 text-blue-300 rounded-full text-sm"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                    {project.technologies.length > 3 && (
-                      <span className="px-3 py-1 bg-gray-600/20 text-gray-300 rounded-full text-sm">
-                        +{project.technologies.length - 3} more
-                      </span>
-                    )}
+            filteredProjects.map((project, i) => (
+              <Reveal key={project.id} delay={(i % 3) * 0.08}>
+                <Card className="glass-card card-hover group h-full overflow-hidden border-white/10 bg-white/[0.04]">
+                  <div className="aspect-video overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      loading="lazy"
+                      className={`h-full w-full transition-transform duration-500 group-hover:scale-110 ${
+                        project.id === "rl-hls" || project.image.includes("hls.png")
+                          ? "bg-white object-contain"
+                          : project.id === "svg-generation" ||
+                            project.id === "science-qa"
+                          ? "object-contain"
+                          : "object-cover"
+                      }`}
+                    />
                   </div>
+                  <CardContent className="p-6">
+                    <h3 className="mb-3 text-xl font-bold text-white">
+                      {project.title}
+                    </h3>
+                    <p className="mb-4 line-clamp-3 text-gray-300">
+                      {project.shortDescription}
+                    </p>
 
-                  {/* Action Buttons */}
-                  <div className="flex items-center justify-between">
-                    <Link
-                      to={`/projects/${project.id}`}
-                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300"
-                    >
-                      <Code className="mr-2" size={16} />
-                      View Details
-                    </Link>
-                    
-                    <div className="flex space-x-2">
-                      {project.github && (
-                        <a
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="p-2 text-gray-300 hover:text-white transition-colors"
+                    {/* Technologies */}
+                    <div className="mb-4 flex flex-wrap gap-2">
+                      {project.technologies.slice(0, 3).map((tech) => (
+                        <span
+                          key={tech}
+                          className="rounded-full bg-sky-500/10 px-3 py-1 font-mono text-xs text-sky-300"
                         >
-                          <Github size={20} />
-                        </a>
-                      )}
-                      {project.demo && (
-                        <a
-                          href={project.demo}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="p-2 text-gray-300 hover:text-white transition-colors"
-                        >
-                          <ExternalLink size={20} />
-                        </a>
+                          {tech}
+                        </span>
+                      ))}
+                      {project.technologies.length > 3 && (
+                        <span className="rounded-full bg-white/5 px-3 py-1 font-mono text-xs text-gray-300">
+                          +{project.technologies.length - 3} more
+                        </span>
                       )}
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
+
+                    {/* Action Buttons */}
+                    <div className="flex items-center justify-between">
+                      <Link
+                        to={`/projects/${project.id}`}
+                        className="inline-flex items-center rounded-lg bg-gradient-to-r from-sky-500 to-cyan-400 px-4 py-2 font-medium text-slate-950 transition-all duration-300 hover:scale-105"
+                      >
+                        <Code className="mr-2" size={16} />
+                        View Details
+                      </Link>
+
+                      <div className="flex space-x-2">
+                        {project.github && (
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub repository"
+                            className="p-2 text-gray-300 transition-colors hover:text-sky-400"
+                          >
+                            <Github size={20} />
+                          </a>
+                        )}
+                        {project.demo && (
+                          <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Live demo"
+                            className="p-2 text-gray-300 transition-colors hover:text-sky-400"
+                          >
+                            <ExternalLink size={20} />
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Reveal>
             ))
           ) : (
-            <div className="col-span-full text-center py-16">
-              <p className="text-gray-400 text-lg">No projects match your filters.</p>
+            <div className="col-span-full py-16 text-center">
+              <p className="text-lg text-gray-400">
+                No projects match your filters.
+              </p>
               <button
                 onClick={clearFilters}
-                className="mt-4 text-blue-400 hover:text-blue-300 underline"
+                className="mt-4 text-sky-400 underline hover:text-sky-300"
               >
                 Clear all filters
               </button>

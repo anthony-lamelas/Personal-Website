@@ -32,61 +32,56 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 0.65rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    /* Refined-dark palette: deep near-black navy base, electric blue/cyan accent */
+    --background: 222 47% 5%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 222 40% 8%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 222 44% 7%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 199 89% 60%;
+    --primary-foreground: 222 47% 6%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 217 33% 14%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 217 33% 14%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 190 90% 55%;
+    --accent-foreground: 222 47% 6%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 62.8% 45%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 199 89% 60%;
+
+    --sidebar-background: 222 44% 7%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 199 89% 60%;
+    --sidebar-primary-foreground: 222 47% 6%;
+    --sidebar-accent: 217 33% 14%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 217 33% 18%;
+    --sidebar-ring: 199 89% 60%;
   }
 }
 
@@ -95,7 +90,86 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground antialiased;
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+    /* Deep base with layered radial-gradient glows (replaces the old flat gradient) */
+    background-color: hsl(222 47% 5%);
+    background-image:
+      radial-gradient(60rem 60rem at 15% -10%, hsl(214 90% 22% / 0.35), transparent 60%),
+      radial-gradient(50rem 50rem at 100% 0%, hsl(190 90% 30% / 0.18), transparent 55%),
+      radial-gradient(45rem 45rem at 50% 120%, hsl(224 80% 30% / 0.22), transparent 60%);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+  }
+
+  /* Slim, themed scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(222 47% 6%);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(217 33% 22%);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(199 60% 40%);
+  }
+}
+
+@layer components {
+  /* Glass surface — refined version of the old bg-white/10 card idiom */
+  .glass {
+    @apply border border-white/10 bg-white/[0.04] backdrop-blur-md;
+  }
+
+  .glass-card {
+    @apply glass rounded-xl transition-all duration-300;
+  }
+
+  /* Interactive card: subtle lift + accent glow on hover */
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:border-sky-400/40 hover:bg-white/[0.07]
+      hover:shadow-[0_10px_40px_-12px_hsl(199_89%_55%/0.45)];
+  }
+
+  /* Animated gradient text for names / accents */
+  .text-gradient {
+    @apply bg-gradient-to-r from-sky-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent;
+    background-size: 200% auto;
+    animation: gradient-x 6s ease infinite;
+  }
+
+  /* Uppercase mono eyebrow labels */
+  .eyebrow {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    @apply text-xs font-medium uppercase tracking-[0.25em] text-sky-400/90;
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
   }
 }
