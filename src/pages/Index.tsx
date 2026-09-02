@@ -41,21 +41,26 @@ const RoleRotator = () => {
     return () => clearInterval(timer);
   }, [reduceMotion]);
 
+  const article = /^[aeiou]/i.test(ROLES[index]) ? "an" : "a";
+
   return (
-    <span className="relative inline-flex h-[1.2em] items-center overflow-hidden align-bottom">
-      <AnimatePresence mode="wait">
-        <motion.span
-          key={index}
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -14 }}
-          transition={{ duration: 0.35, ease: "easeOut" }}
-          className="text-gradient font-display font-semibold"
-        >
-          {ROLES[index]}
-        </motion.span>
-      </AnimatePresence>
-    </span>
+    <>
+      <span className="text-gray-400">{article}</span>
+      <span className="relative inline-flex h-[1.2em] items-center overflow-hidden align-bottom">
+        <AnimatePresence mode="wait">
+          <motion.span
+            key={index}
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -14 }}
+            transition={{ duration: 0.35, ease: "easeOut" }}
+            className="text-gradient font-display font-semibold"
+          >
+            {ROLES[index]}
+          </motion.span>
+        </AnimatePresence>
+      </span>
+    </>
   );
 };
 
@@ -155,7 +160,7 @@ const Index = () => {
             variants={item}
             className="mb-8 flex items-center justify-center gap-2 text-2xl md:text-3xl"
           >
-            <span className="text-gray-400">I'm a</span>
+            <span className="text-gray-400">I'm</span>
             <RoleRotator />
           </motion.div>
 
