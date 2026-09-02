@@ -21,8 +21,8 @@ const experience: TimelineEntry[] = [
     title: "Software Engineering Intern",
     subtitle: "Google | May 2026 - August 2026",
     bullets: [
-      "Developing AI agents specializing in writing experiment reports based on complex metrics and business context",
-      "Performing SQL pipeline optimizations, reducing on-call burden and compute costs",
+      "Engineered an AI agent in Python by developing custom skills and integrating into an existing MCP server to automate complex, context-aware experiment reporting",
+      "Optimized a core SQL pipeline processing billions of telemetry data points by decoupling logic into an intermediate database layer, which improved data freshness by six times, lowered compute costs, and minimized engineering on-call burden",
     ],
   },
   {

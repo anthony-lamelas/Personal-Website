@@ -9,7 +9,6 @@ export const flightHub: Project = {
   technologies: ["Python", "Flask", "MySQL", "HTML", "CSS", "JavaScript", "Docker"],
   image: "/images/ffa70535-f6b0-4076-a09d-95bcfe3e75d1.png",
   github: "https://github.com/anthony-lamelas/FlightHub",
-  demo: "https://flighthub.onrender.com/",
   role: "Full-Stack Developer",
   features: [
     "User authentication system with separate customer and staff portals",

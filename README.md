@@ -2,8 +2,7 @@
 
 My personal website showcasing my projects and experience as a software engineer.
 
-Link: https://anthony-lamelas.onrender.com/
-
+Link: https://anthonylamelas.com
 ## Getting Started
 
 ```bash
