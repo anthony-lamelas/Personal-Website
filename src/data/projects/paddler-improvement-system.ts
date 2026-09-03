@@ -9,7 +9,6 @@ export const paddlerImprovementSystem: Project = {
   technologies: ["Python", "Scikit-learn", "DeepSeek API"],
   image: "/images/55539b4d-7d66-4c87-80df-c618640f348c.png",
   github: "https://github.com/nyuconcretecanoe/PIS",
-  demo: "https://concretecanoe.skparab1.com/",
   role: "Machine Learning Developer",
   features: [
     "Machine learning classification of optimal vs. inoptimal strokes",
