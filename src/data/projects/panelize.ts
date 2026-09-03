@@ -9,8 +9,7 @@ export const panelize: Project = {
   technologies: ["React", "TypeScript", "Flask", "GPT-4.1", "DALL-E", "BLIP, LangChain"],
   image: "/images/1f56a8a0-38c7-473b-bda2-987ea1d286a0.png",
   github: "https://github.com/anthony-lamelas/Panelize",
-  demo: "https://panelize-demo.com",
-  role: "Lead Developer",    
+  role: "Lead Developer",
   features: [
     "AI-driven comic panel sequence generation",
     "Custom theme integration for personalized stories",

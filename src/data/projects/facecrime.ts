@@ -9,7 +9,6 @@ export const faceCrime: Project = {
   technologies: ["React", "TypeScript", "Python", "CLIP", "PostgreSQL", "pgvector"],
   image: "/images/cb258cc7-0bd5-4458-8ad6-bf8f74d14173.png",
   github: "https://github.com/anthony-lamelas/FaceCrime_backend",
-  demo: "https://facecrime.io",
   role: "Frontend Developer",
   features: [
     "Face capture via device camera or file upload",
