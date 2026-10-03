@@ -118,6 +118,7 @@ const Index = () => {
     { name: "Natural Language Processing", code: "CSCI-UA 469" },
     { name: "Computer Security", code: "CS-UY 3923" },
     { name: "Deep Learning", code: "CS-GY 6953" },
+    { name: "Big Data", code: "CS-GY 6513" },
   ];
 
   const featuredProjects = projects.slice(0, 3);

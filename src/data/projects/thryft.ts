@@ -9,7 +9,6 @@ export const p1: Project = {
   technologies: ["Ruby", "Rails", "HTML/CSS", "Heroku", "Cucumber", "RSpec"],
   image: "/images/thryft_cover.png",
   github: "https://github.com/anthony-lamelas/Thryft",
-  demo: "https://thryft-team9-34327d4250fb.herokuapp.com/",
   role: "Team Lead and Full-Stack Developer",
   features: [
     "Tinder-style swipe interface for browsing items",
